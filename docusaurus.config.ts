@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://duongnam2810.github.io/tech-blog',
+  url: 'https://duongnam2810.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/tech-blog/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -27,7 +27,7 @@ const config: Config = {
 
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
-  
+
   onBrokenLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
