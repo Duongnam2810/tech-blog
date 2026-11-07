@@ -86,13 +86,20 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
+        {to: '/#explore', label: 'Khám phá', position: 'left'},
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Tài liệu',
         },
+        {
+          to: '/docs/python-tutorial/bai-1-lam-quen-python',
+          label: 'Python',
+          position: 'left',
+        },
         {to: '/blog', label: 'Bài viết', position: 'left'},
+        {to: '/about', label: 'Giới thiệu', position: 'left'},
         {
           href: 'https://github.com/Duongnam2810/tech-blog',
           label: 'GitHub',

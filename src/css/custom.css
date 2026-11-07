@@ -1,40 +1,71 @@
-/* Blog Tin Học — Design Foundation */
-:root {
-  --ifm-color-primary: #2563eb;
-  --ifm-color-primary-dark: #1d4ed8;
-  --ifm-color-primary-darker: #1e40af;
-  --ifm-color-primary-darkest: #1e3a8a;
-  --ifm-color-primary-light: #3b82f6;
-  --ifm-color-primary-lighter: #60a5fa;
-  --ifm-color-primary-lightest: #93c5fd;
+/* ═══════════════════════════════════════════════
+   Blog Tin Học — Design Foundation
+   Global tokens · Navbar · Footer · Typography
+   ═══════════════════════════════════════════════ */
 
-  --ifm-font-family-base: Inter, "Be Vietnam Pro", "Segoe UI", Arial, sans-serif;
-  --ifm-font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Primary palette */
+  --ifm-color-primary: #356AE6;
+  --ifm-color-primary-dark: #2458d4;
+  --ifm-color-primary-darker: #1f4ec5;
+  --ifm-color-primary-darkest: #1a40a2;
+  --ifm-color-primary-light: #4d7deb;
+  --ifm-color-primary-lighter: #6a92f0;
+  --ifm-color-primary-lightest: #91b3f5;
+
+  /* Typography */
+  --ifm-font-family-base: 'Inter', 'Be Vietnam Pro', 'Segoe UI', Arial, sans-serif;
+  --ifm-font-family-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.7;
 
+  /* Headings */
   --ifm-heading-font-weight: 750;
-  --ifm-heading-color: #172b4d;
+  --ifm-heading-color: #172B4D;
+
+  /* Text */
   --ifm-font-color-base: #334155;
+
+  /* Backgrounds */
   --ifm-background-color: #ffffff;
-  --ifm-background-surface-color: #f8fafc;
+  --ifm-background-surface-color: #F8FAFC;
+
+  /* Emphasis scale */
   --ifm-color-emphasis-100: #f1f5f9;
   --ifm-color-emphasis-200: #e2e8f0;
   --ifm-color-emphasis-300: #cbd5e1;
   --ifm-color-emphasis-400: #94a3b8;
-  --ifm-color-emphasis-500: #64748b;
+  --ifm-color-emphasis-500: #64748B;
   --ifm-color-emphasis-600: #475569;
   --ifm-color-emphasis-700: #334155;
 
+  /* Navbar */
   --ifm-navbar-background-color: rgba(255, 255, 255, 0.92);
   --ifm-navbar-shadow: 0 1px 0 rgba(15, 23, 42, 0.07);
   --ifm-navbar-height: 4.25rem;
-  --ifm-footer-background-color: #f8fafc;
+
+  /* Footer */
+  --ifm-footer-background-color: #F8FAFC;
+
+  /* Code */
   --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(53, 106, 230, 0.08);
+
+  /* Shapes */
   --ifm-global-radius: 12px;
   --ifm-button-border-radius: 10px;
-  --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.08);
+
+  /* Accent tokens (for custom usage) */
+  --accent-mint: #BDEBD8;
+  --accent-yellow: #F5D98B;
+  --accent-lavender: #DDD6FE;
 }
+
+/* ──────────────────────────────────────────────
+   Dark Mode
+   ────────────────────────────────────────────── */
 
 [data-theme='dark'] {
   --ifm-color-primary: #7aa7ff;
@@ -49,6 +80,7 @@
   --ifm-font-color-base: #cbd5e1;
   --ifm-background-color: #0b1220;
   --ifm-background-surface-color: #111c2e;
+
   --ifm-color-emphasis-100: #17243a;
   --ifm-color-emphasis-200: #26364d;
   --ifm-color-emphasis-300: #3b4d66;
@@ -60,7 +92,15 @@
   --ifm-navbar-background-color: rgba(11, 18, 32, 0.92);
   --ifm-footer-background-color: #111c2e;
   --docusaurus-highlighted-code-line-bg: rgba(122, 167, 255, 0.14);
+
+  --accent-mint: #065f46;
+  --accent-yellow: #78350f;
+  --accent-lavender: #4c1d95;
 }
+
+/* ──────────────────────────────────────────────
+   Global Resets & Typography
+   ────────────────────────────────────────────── */
 
 html {
   scroll-behavior: smooth;
@@ -76,12 +116,20 @@ body {
 
 ::selection {
   color: #fff;
-  background: #2563eb;
+  background: #356AE6;
+}
+
+[data-theme='dark'] ::selection {
+  background: #4b83e8;
 }
 
 a {
   text-underline-offset: 3px;
 }
+
+/* ──────────────────────────────────────────────
+   Navbar
+   ────────────────────────────────────────────── */
 
 .navbar {
   backdrop-filter: blur(14px);
@@ -105,6 +153,10 @@ a {
 .navbar__link--active {
   color: var(--ifm-color-primary);
 }
+
+/* ──────────────────────────────────────────────
+   Footer
+   ────────────────────────────────────────────── */
 
 .footer {
   border-top: 1px solid var(--ifm-color-emphasis-200);
@@ -134,6 +186,10 @@ a {
   font-size: 0.78rem;
 }
 
+/* ──────────────────────────────────────────────
+   Components
+   ────────────────────────────────────────────── */
+
 .button {
   font-weight: 700;
 }
@@ -144,11 +200,19 @@ a {
   box-shadow: none;
 }
 
+/* ──────────────────────────────────────────────
+   Markdown
+   ────────────────────────────────────────────── */
+
 .markdown h1,
 .markdown h2,
 .markdown h3 {
   letter-spacing: -0.035em;
 }
+
+/* ──────────────────────────────────────────────
+   Responsive
+   ────────────────────────────────────────────── */
 
 @media (max-width: 996px) {
   :root {
