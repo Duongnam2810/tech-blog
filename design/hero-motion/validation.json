@@ -1,0 +1,383 @@
+{
+  "views": [
+    {
+      "name": "desktop",
+      "theme": "light",
+      "hero": {
+        "width": 1320,
+        "height": 696
+      },
+      "frame": {
+        "width": 420,
+        "height": 525
+      },
+      "monogram": {
+        "width": 248.5,
+        "height": 180
+      },
+      "nameFont": "74px",
+      "sections": 8,
+      "overflow": false,
+      "otherSections": [
+        "<header><p class=\"eyebrow_La_K\">01 / THE PERSON BEHIND THE SCREEN</p><h2 id=\"about-title\">A little<br>about me<span class=\"blue_xU1H\">.</span></h2></header><div class=\"\"><p class=\"lead_JuoR\">[Your story starts here. Introduce yourself and what connects you to technology and education.]</p><div class=\"story-columns_RWDw\"><div><h3>Where I started</h3><p>[A few lines about your background and the experiences that shaped your interests.]</p></div><div><h3>What keeps me curious</h3><p>[Your approach to learning, experimenting, and sharing useful things with others.]</p></div></div><p class=\"editorial-note_Ylm7\"><span aria-hidden=\"true\">↳</span>[One honest sentence about what you're focused on right now.]</p></div>",
+        "<div class=\"container_nTbg section_y05o\"><div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">02 / CURIOSITY, IN FOUR DIRECTIONS</p><h2 id=\"interests-title\">What I'm exploring<span class=\"blue_xU1H\">.</span></h2></header><p>Different disciplines.<br>A shared interest in making learning better.</p></div><div class=\"interest-grid_Pu9c\"><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg><span>01</span></div><h3>Educational technology</h3><p>Exploring how digital tools can make knowledge easier to access, understand, and put into practice.</p><span class=\"topic_QYM0\">LEARNING × TECHNOLOGY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg><span>02</span></div><h3>Programming &amp; algorithms</h3><p>Breaking problems into smaller pieces. Finding clarity through logic, patterns, and experimentation.</p><span class=\"topic_QYM0\">LOGIC × POSSIBILITY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg><span>03</span></div><h3>Digital content creation</h3><p>Turning ideas into thoughtful learning materials, visual explanations, and interactive experiences.</p><span class=\"topic_QYM0\">IDEAS × EXPRESSION</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"18\" rx=\"2\"></rect><path d=\"M2 9h20M6 6h.01M10 6h.01M10 9v12\"></path></svg><span>04</span></div><h3>Web development</h3><p>Connecting content, design, and code to build useful spaces on the web.</p><span class=\"topic_QYM0\">DESIGN × CODE</span></article></div><p class=\"content-note_iLNW\">Interest descriptions are proposed copy for review.</p></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">03 / IDEAS INTO SOMETHING REAL</p><h2 id=\"projects-title\">Things I've been building<span class=\"blue_xU1H\">.</span></h2></header><p>A closer look at the work.<br>The process matters, too.</p></div><article class=\"featured-project_ZV2E\"><div class=\"project-preview_YPRE\" role=\"img\" aria-label=\"Abstract interface study for Blog Tin Học, not a screenshot\"><div class=\"preview-index_Iuuj\">FEATURED / EDUCATIONAL WEBSITE</div><div class=\"mini-browser_R_I_\" aria-hidden=\"true\"><div class=\"mini-bar_OMVI\"><span class=\"mini-brand_BRhV\">Blog Tin Học</span><span>LEARN · EXPLORE · CREATE</span></div><div class=\"mini-body_QTUw\"><span class=\"mini-label_LH1I\">KHÔNG GIAN HỌC TẬP SỐ</span><strong>Khám phá tri thức.<br><span>Sáng tạo mỗi ngày.</span></strong><div class=\"mini-rule_QeM4\"></div><div class=\"mini-tiles_Ynq4\"><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></span></div></div></div><span class=\"preview-caption_K6US\">ABSTRACT INTERFACE STUDY</span></div><div class=\"featured-copy_S9JB\"><div class=\"project-kicker_kH2P\"><span>01 / WEB &amp; EDUCATION</span><span class=\"status_NFLi\">Existing website</span></div><h3>Blog Tin Học</h3><p>An educational website with documentation, blog posts, and a Python learning page.</p><p class=\"project-detail__fbE\">[Add your contribution, the problem you set out to solve, and what you learned.]</p><div class=\"tags_aapL\"><span>Docusaurus</span><span>React</span><span>TypeScript</span><span>MDX</span></div><div class=\"project-links_Zt65\"><a href=\"/tech-blog/\">Visit website<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a><a href=\"https://github.com/Duongnam2810/tech-blog\" target=\"_blank\" rel=\"noopener noreferrer\">Source code<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a></div></div></article><div class=\"project-pair_igiq\"><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>02 / PROGRAMMING</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"project-symbol_NXPM\" aria-hidden=\"true\">[ py ]</div><h3>Python Learning Projects</h3><p>[Describe a real exercise or project, your contribution, and what you learned.]</p><div class=\"tags_aapL\"><span>Python · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>03 / LEARNING RESOURCES</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"slide-study_q4y8\" aria-hidden=\"true\"><span>Learn<br>through play.</span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></div><h3>PowerPoint Learning Resources</h3><p>[Introduce a confirmed learning resource, its audience, and your role in creating it.]</p><div class=\"tags_aapL\"><span>PowerPoint · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article></div><article class=\"project-row_QgML\"><span class=\"row-index_U2uQ\">04</span><div><span class=\"eyebrow_La_K\">EXPERIMENTS / CONCEPT SLOT</span><h3>Digital Learning Experiments</h3><p>[A place for a real experiment when you're ready to share it.]</p><div class=\"tags_aapL\"><span>Technology to confirm</span></div></div><span class=\"status_NFLi\">To confirm</span></article>",
+        "<div class=\"container_nTbg section_y05o split_wDvV\"><div><header><p class=\"eyebrow_La_K\">04 / ALWAYS A LEARNER</p><h2 id=\"journey-title\">My learning<br>journey<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A story told through small steps,<br>questions, and things made along the way.</p></header><p class=\"content-note_iLNW\">Suggested chapter titles.<br>Personal history to be supplied; no dates implied.</p></div><ol class=\"timeline_ZWcb\"><li><span class=\"milestone-index_F3Qg\">01</span><h3>The beginning</h3><p>[Share the experience that first sparked your curiosity.]</p></li><li><span class=\"milestone-index_F3Qg\">02</span><h3>Exploring technology</h3><p>[Describe the subjects and tools you started discovering.]</p></li><li><span class=\"milestone-index_F3Qg\">03</span><h3>Learning and experimenting</h3><p>[Add a real learning experience or early experiment.]</p></li><li class=\"current_uzLR\"><span class=\"milestone-index_F3Qg\">04</span><h3>Building Blog Tin Học</h3><p>[Tell the story behind this website and confirm your role.]</p></li><li><span class=\"milestone-index_F3Qg\">05</span><h3>What's next</h3><p>[Share an intention or question you want to explore next.]</p></li></ol></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">05 / THE EVERYDAY TOOLKIT</p><h2 id=\"tools-title\">Tools I work with<span class=\"blue_xU1H\">.</span></h2></header><p>Tools support the idea.<br>Learning keeps the toolkit evolving.</p></div><div class=\"tool-labels_j4M3\"><h3>Currently using</h3><span>Repository-backed tools; personal use to confirm</span></div><div class=\"tools-table_L7Kv\"><div><span class=\"tool-number_hM1A\">01</span><h4>Web development</h4><div class=\"tags_aapL\"><span>React</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div></div><div><span class=\"tool-number_hM1A\">02</span><h4>Programming</h4><div class=\"tags_aapL\"><span>Python<small>lesson present</small></span></div></div><div><span class=\"tool-number_hM1A\">03</span><h4>Content &amp; design</h4><div class=\"tags_aapL\"><span>Docusaurus</span><span>MDX</span><span>[Design tool]</span></div></div><div><span class=\"tool-number_hM1A\">04</span><h4>Development workflow</h4><div class=\"tags_aapL\"><span>GitHub</span><span>npm</span><span>[Editor]</span></div></div></div><div class=\"exploring-row_Ujcb\"><div><span class=\"explore-marker_WHFq\" aria-hidden=\"true\">+</span><h3>Currently exploring</h3></div><p>[Add tools or topics you're actively learning.]</p></div>",
+        "<div class=\"container_nTbg\"><div class=\"philosophy-top_LufP\"><p class=\"eyebrow_La_K\">06 / A SIMPLE COMPASS</p><h2 id=\"philosophy-title\">How I learn and create.</h2></div><p class=\"motto_c7hY\">Learn.<br>Create.<br><span>Contribute.</span></p><div class=\"philosophy-bottom_N7V6\"><svg viewBox=\"0 0 72 72\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M36 0v72M0 36h72M10 10l52 52M10 62 62 10\"></path></svg><p lang=\"vi\">Học hỏi để hiểu biết.<br>Sáng tạo để khám phá.<br>Chia sẻ để cùng phát triển.</p><span>THE CYCLE CONTINUES ↗</span></div></div>",
+        "<header><p class=\"eyebrow_La_K\">07 / KEEP THE CONVERSATION GOING</p><h2 id=\"contact-title\">Let's<br>connect<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A question, an idea, or a shared curiosity.<br>Good conversations can start small.</p></header><div class=\"contact-list_Eji9\"><div><span>Email</span><span>[Your public email]</span></div><div><span>GitHub</span><span>[Your GitHub profile]</span></div><div><span>Facebook</span><span>[Your public profile]</span></div><div><span>Elsewhere</span><span>[Another place to connect]</span></div><p class=\"content-note_iLNW\">Contact destinations will become links after confirmation.</p></div>"
+      ],
+      "animations": 0,
+      "frameMatches": true,
+      "typographyMatches": true,
+      "otherSectionsUnchanged": true
+    },
+    {
+      "name": "tablet",
+      "theme": "light",
+      "hero": {
+        "width": 819,
+        "height": 555.875
+      },
+      "frame": {
+        "width": 319.1875,
+        "height": 398.984375
+      },
+      "monogram": {
+        "width": 176.703125,
+        "height": 128
+      },
+      "nameFont": "56px",
+      "sections": 8,
+      "overflow": false,
+      "otherSections": [
+        "<header><p class=\"eyebrow_La_K\">01 / THE PERSON BEHIND THE SCREEN</p><h2 id=\"about-title\">A little<br>about me<span class=\"blue_xU1H\">.</span></h2></header><div class=\"\"><p class=\"lead_JuoR\">[Your story starts here. Introduce yourself and what connects you to technology and education.]</p><div class=\"story-columns_RWDw\"><div><h3>Where I started</h3><p>[A few lines about your background and the experiences that shaped your interests.]</p></div><div><h3>What keeps me curious</h3><p>[Your approach to learning, experimenting, and sharing useful things with others.]</p></div></div><p class=\"editorial-note_Ylm7\"><span aria-hidden=\"true\">↳</span>[One honest sentence about what you're focused on right now.]</p></div>",
+        "<div class=\"container_nTbg section_y05o\"><div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">02 / CURIOSITY, IN FOUR DIRECTIONS</p><h2 id=\"interests-title\">What I'm exploring<span class=\"blue_xU1H\">.</span></h2></header><p>Different disciplines.<br>A shared interest in making learning better.</p></div><div class=\"interest-grid_Pu9c\"><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg><span>01</span></div><h3>Educational technology</h3><p>Exploring how digital tools can make knowledge easier to access, understand, and put into practice.</p><span class=\"topic_QYM0\">LEARNING × TECHNOLOGY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg><span>02</span></div><h3>Programming &amp; algorithms</h3><p>Breaking problems into smaller pieces. Finding clarity through logic, patterns, and experimentation.</p><span class=\"topic_QYM0\">LOGIC × POSSIBILITY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg><span>03</span></div><h3>Digital content creation</h3><p>Turning ideas into thoughtful learning materials, visual explanations, and interactive experiences.</p><span class=\"topic_QYM0\">IDEAS × EXPRESSION</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"18\" rx=\"2\"></rect><path d=\"M2 9h20M6 6h.01M10 6h.01M10 9v12\"></path></svg><span>04</span></div><h3>Web development</h3><p>Connecting content, design, and code to build useful spaces on the web.</p><span class=\"topic_QYM0\">DESIGN × CODE</span></article></div><p class=\"content-note_iLNW\">Interest descriptions are proposed copy for review.</p></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">03 / IDEAS INTO SOMETHING REAL</p><h2 id=\"projects-title\">Things I've been building<span class=\"blue_xU1H\">.</span></h2></header><p>A closer look at the work.<br>The process matters, too.</p></div><article class=\"featured-project_ZV2E\"><div class=\"project-preview_YPRE\" role=\"img\" aria-label=\"Abstract interface study for Blog Tin Học, not a screenshot\"><div class=\"preview-index_Iuuj\">FEATURED / EDUCATIONAL WEBSITE</div><div class=\"mini-browser_R_I_\" aria-hidden=\"true\"><div class=\"mini-bar_OMVI\"><span class=\"mini-brand_BRhV\">Blog Tin Học</span><span>LEARN · EXPLORE · CREATE</span></div><div class=\"mini-body_QTUw\"><span class=\"mini-label_LH1I\">KHÔNG GIAN HỌC TẬP SỐ</span><strong>Khám phá tri thức.<br><span>Sáng tạo mỗi ngày.</span></strong><div class=\"mini-rule_QeM4\"></div><div class=\"mini-tiles_Ynq4\"><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></span></div></div></div><span class=\"preview-caption_K6US\">ABSTRACT INTERFACE STUDY</span></div><div class=\"featured-copy_S9JB\"><div class=\"project-kicker_kH2P\"><span>01 / WEB &amp; EDUCATION</span><span class=\"status_NFLi\">Existing website</span></div><h3>Blog Tin Học</h3><p>An educational website with documentation, blog posts, and a Python learning page.</p><p class=\"project-detail__fbE\">[Add your contribution, the problem you set out to solve, and what you learned.]</p><div class=\"tags_aapL\"><span>Docusaurus</span><span>React</span><span>TypeScript</span><span>MDX</span></div><div class=\"project-links_Zt65\"><a href=\"/tech-blog/\">Visit website<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a><a href=\"https://github.com/Duongnam2810/tech-blog\" target=\"_blank\" rel=\"noopener noreferrer\">Source code<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a></div></div></article><div class=\"project-pair_igiq\"><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>02 / PROGRAMMING</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"project-symbol_NXPM\" aria-hidden=\"true\">[ py ]</div><h3>Python Learning Projects</h3><p>[Describe a real exercise or project, your contribution, and what you learned.]</p><div class=\"tags_aapL\"><span>Python · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>03 / LEARNING RESOURCES</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"slide-study_q4y8\" aria-hidden=\"true\"><span>Learn<br>through play.</span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></div><h3>PowerPoint Learning Resources</h3><p>[Introduce a confirmed learning resource, its audience, and your role in creating it.]</p><div class=\"tags_aapL\"><span>PowerPoint · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article></div><article class=\"project-row_QgML\"><span class=\"row-index_U2uQ\">04</span><div><span class=\"eyebrow_La_K\">EXPERIMENTS / CONCEPT SLOT</span><h3>Digital Learning Experiments</h3><p>[A place for a real experiment when you're ready to share it.]</p><div class=\"tags_aapL\"><span>Technology to confirm</span></div></div><span class=\"status_NFLi\">To confirm</span></article>",
+        "<div class=\"container_nTbg section_y05o split_wDvV\"><div><header><p class=\"eyebrow_La_K\">04 / ALWAYS A LEARNER</p><h2 id=\"journey-title\">My learning<br>journey<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A story told through small steps,<br>questions, and things made along the way.</p></header><p class=\"content-note_iLNW\">Suggested chapter titles.<br>Personal history to be supplied; no dates implied.</p></div><ol class=\"timeline_ZWcb\"><li><span class=\"milestone-index_F3Qg\">01</span><h3>The beginning</h3><p>[Share the experience that first sparked your curiosity.]</p></li><li><span class=\"milestone-index_F3Qg\">02</span><h3>Exploring technology</h3><p>[Describe the subjects and tools you started discovering.]</p></li><li><span class=\"milestone-index_F3Qg\">03</span><h3>Learning and experimenting</h3><p>[Add a real learning experience or early experiment.]</p></li><li class=\"current_uzLR\"><span class=\"milestone-index_F3Qg\">04</span><h3>Building Blog Tin Học</h3><p>[Tell the story behind this website and confirm your role.]</p></li><li><span class=\"milestone-index_F3Qg\">05</span><h3>What's next</h3><p>[Share an intention or question you want to explore next.]</p></li></ol></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">05 / THE EVERYDAY TOOLKIT</p><h2 id=\"tools-title\">Tools I work with<span class=\"blue_xU1H\">.</span></h2></header><p>Tools support the idea.<br>Learning keeps the toolkit evolving.</p></div><div class=\"tool-labels_j4M3\"><h3>Currently using</h3><span>Repository-backed tools; personal use to confirm</span></div><div class=\"tools-table_L7Kv\"><div><span class=\"tool-number_hM1A\">01</span><h4>Web development</h4><div class=\"tags_aapL\"><span>React</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div></div><div><span class=\"tool-number_hM1A\">02</span><h4>Programming</h4><div class=\"tags_aapL\"><span>Python<small>lesson present</small></span></div></div><div><span class=\"tool-number_hM1A\">03</span><h4>Content &amp; design</h4><div class=\"tags_aapL\"><span>Docusaurus</span><span>MDX</span><span>[Design tool]</span></div></div><div><span class=\"tool-number_hM1A\">04</span><h4>Development workflow</h4><div class=\"tags_aapL\"><span>GitHub</span><span>npm</span><span>[Editor]</span></div></div></div><div class=\"exploring-row_Ujcb\"><div><span class=\"explore-marker_WHFq\" aria-hidden=\"true\">+</span><h3>Currently exploring</h3></div><p>[Add tools or topics you're actively learning.]</p></div>",
+        "<div class=\"container_nTbg\"><div class=\"philosophy-top_LufP\"><p class=\"eyebrow_La_K\">06 / A SIMPLE COMPASS</p><h2 id=\"philosophy-title\">How I learn and create.</h2></div><p class=\"motto_c7hY\">Learn.<br>Create.<br><span>Contribute.</span></p><div class=\"philosophy-bottom_N7V6\"><svg viewBox=\"0 0 72 72\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M36 0v72M0 36h72M10 10l52 52M10 62 62 10\"></path></svg><p lang=\"vi\">Học hỏi để hiểu biết.<br>Sáng tạo để khám phá.<br>Chia sẻ để cùng phát triển.</p><span>THE CYCLE CONTINUES ↗</span></div></div>",
+        "<header><p class=\"eyebrow_La_K\">07 / KEEP THE CONVERSATION GOING</p><h2 id=\"contact-title\">Let's<br>connect<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A question, an idea, or a shared curiosity.<br>Good conversations can start small.</p></header><div class=\"contact-list_Eji9\"><div><span>Email</span><span>[Your public email]</span></div><div><span>GitHub</span><span>[Your GitHub profile]</span></div><div><span>Facebook</span><span>[Your public profile]</span></div><div><span>Elsewhere</span><span>[Another place to connect]</span></div><p class=\"content-note_iLNW\">Contact destinations will become links after confirmation.</p></div>"
+      ],
+      "animations": 0,
+      "frameMatches": true,
+      "typographyMatches": true,
+      "otherSectionsUnchanged": true
+    },
+    {
+      "name": "mobile",
+      "theme": "light",
+      "hero": {
+        "width": 375,
+        "height": 1006.65625
+      },
+      "frame": {
+        "width": 280,
+        "height": 350
+      },
+      "monogram": {
+        "width": 182.234375,
+        "height": 132
+      },
+      "nameFont": "60px",
+      "sections": 8,
+      "overflow": false,
+      "otherSections": [
+        "<header><p class=\"eyebrow_La_K\">01 / THE PERSON BEHIND THE SCREEN</p><h2 id=\"about-title\">A little<br>about me<span class=\"blue_xU1H\">.</span></h2></header><div class=\"\"><p class=\"lead_JuoR\">[Your story starts here. Introduce yourself and what connects you to technology and education.]</p><div class=\"story-columns_RWDw\"><div><h3>Where I started</h3><p>[A few lines about your background and the experiences that shaped your interests.]</p></div><div><h3>What keeps me curious</h3><p>[Your approach to learning, experimenting, and sharing useful things with others.]</p></div></div><p class=\"editorial-note_Ylm7\"><span aria-hidden=\"true\">↳</span>[One honest sentence about what you're focused on right now.]</p></div>",
+        "<div class=\"container_nTbg section_y05o\"><div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">02 / CURIOSITY, IN FOUR DIRECTIONS</p><h2 id=\"interests-title\">What I'm exploring<span class=\"blue_xU1H\">.</span></h2></header><p>Different disciplines.<br>A shared interest in making learning better.</p></div><div class=\"interest-grid_Pu9c\"><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg><span>01</span></div><h3>Educational technology</h3><p>Exploring how digital tools can make knowledge easier to access, understand, and put into practice.</p><span class=\"topic_QYM0\">LEARNING × TECHNOLOGY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg><span>02</span></div><h3>Programming &amp; algorithms</h3><p>Breaking problems into smaller pieces. Finding clarity through logic, patterns, and experimentation.</p><span class=\"topic_QYM0\">LOGIC × POSSIBILITY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg><span>03</span></div><h3>Digital content creation</h3><p>Turning ideas into thoughtful learning materials, visual explanations, and interactive experiences.</p><span class=\"topic_QYM0\">IDEAS × EXPRESSION</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"18\" rx=\"2\"></rect><path d=\"M2 9h20M6 6h.01M10 6h.01M10 9v12\"></path></svg><span>04</span></div><h3>Web development</h3><p>Connecting content, design, and code to build useful spaces on the web.</p><span class=\"topic_QYM0\">DESIGN × CODE</span></article></div><p class=\"content-note_iLNW\">Interest descriptions are proposed copy for review.</p></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">03 / IDEAS INTO SOMETHING REAL</p><h2 id=\"projects-title\">Things I've been building<span class=\"blue_xU1H\">.</span></h2></header><p>A closer look at the work.<br>The process matters, too.</p></div><article class=\"featured-project_ZV2E\"><div class=\"project-preview_YPRE\" role=\"img\" aria-label=\"Abstract interface study for Blog Tin Học, not a screenshot\"><div class=\"preview-index_Iuuj\">FEATURED / EDUCATIONAL WEBSITE</div><div class=\"mini-browser_R_I_\" aria-hidden=\"true\"><div class=\"mini-bar_OMVI\"><span class=\"mini-brand_BRhV\">Blog Tin Học</span><span>LEARN · EXPLORE · CREATE</span></div><div class=\"mini-body_QTUw\"><span class=\"mini-label_LH1I\">KHÔNG GIAN HỌC TẬP SỐ</span><strong>Khám phá tri thức.<br><span>Sáng tạo mỗi ngày.</span></strong><div class=\"mini-rule_QeM4\"></div><div class=\"mini-tiles_Ynq4\"><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></span></div></div></div><span class=\"preview-caption_K6US\">ABSTRACT INTERFACE STUDY</span></div><div class=\"featured-copy_S9JB\"><div class=\"project-kicker_kH2P\"><span>01 / WEB &amp; EDUCATION</span><span class=\"status_NFLi\">Existing website</span></div><h3>Blog Tin Học</h3><p>An educational website with documentation, blog posts, and a Python learning page.</p><p class=\"project-detail__fbE\">[Add your contribution, the problem you set out to solve, and what you learned.]</p><div class=\"tags_aapL\"><span>Docusaurus</span><span>React</span><span>TypeScript</span><span>MDX</span></div><div class=\"project-links_Zt65\"><a href=\"/tech-blog/\">Visit website<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a><a href=\"https://github.com/Duongnam2810/tech-blog\" target=\"_blank\" rel=\"noopener noreferrer\">Source code<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a></div></div></article><div class=\"project-pair_igiq\"><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>02 / PROGRAMMING</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"project-symbol_NXPM\" aria-hidden=\"true\">[ py ]</div><h3>Python Learning Projects</h3><p>[Describe a real exercise or project, your contribution, and what you learned.]</p><div class=\"tags_aapL\"><span>Python · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>03 / LEARNING RESOURCES</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"slide-study_q4y8\" aria-hidden=\"true\"><span>Learn<br>through play.</span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></div><h3>PowerPoint Learning Resources</h3><p>[Introduce a confirmed learning resource, its audience, and your role in creating it.]</p><div class=\"tags_aapL\"><span>PowerPoint · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article></div><article class=\"project-row_QgML\"><span class=\"row-index_U2uQ\">04</span><div><span class=\"eyebrow_La_K\">EXPERIMENTS / CONCEPT SLOT</span><h3>Digital Learning Experiments</h3><p>[A place for a real experiment when you're ready to share it.]</p><div class=\"tags_aapL\"><span>Technology to confirm</span></div></div><span class=\"status_NFLi\">To confirm</span></article>",
+        "<div class=\"container_nTbg section_y05o split_wDvV\"><div><header><p class=\"eyebrow_La_K\">04 / ALWAYS A LEARNER</p><h2 id=\"journey-title\">My learning<br>journey<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A story told through small steps,<br>questions, and things made along the way.</p></header><p class=\"content-note_iLNW\">Suggested chapter titles.<br>Personal history to be supplied; no dates implied.</p></div><ol class=\"timeline_ZWcb\"><li><span class=\"milestone-index_F3Qg\">01</span><h3>The beginning</h3><p>[Share the experience that first sparked your curiosity.]</p></li><li><span class=\"milestone-index_F3Qg\">02</span><h3>Exploring technology</h3><p>[Describe the subjects and tools you started discovering.]</p></li><li><span class=\"milestone-index_F3Qg\">03</span><h3>Learning and experimenting</h3><p>[Add a real learning experience or early experiment.]</p></li><li class=\"current_uzLR\"><span class=\"milestone-index_F3Qg\">04</span><h3>Building Blog Tin Học</h3><p>[Tell the story behind this website and confirm your role.]</p></li><li><span class=\"milestone-index_F3Qg\">05</span><h3>What's next</h3><p>[Share an intention or question you want to explore next.]</p></li></ol></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">05 / THE EVERYDAY TOOLKIT</p><h2 id=\"tools-title\">Tools I work with<span class=\"blue_xU1H\">.</span></h2></header><p>Tools support the idea.<br>Learning keeps the toolkit evolving.</p></div><div class=\"tool-labels_j4M3\"><h3>Currently using</h3><span>Repository-backed tools; personal use to confirm</span></div><div class=\"tools-table_L7Kv\"><div><span class=\"tool-number_hM1A\">01</span><h4>Web development</h4><div class=\"tags_aapL\"><span>React</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div></div><div><span class=\"tool-number_hM1A\">02</span><h4>Programming</h4><div class=\"tags_aapL\"><span>Python<small>lesson present</small></span></div></div><div><span class=\"tool-number_hM1A\">03</span><h4>Content &amp; design</h4><div class=\"tags_aapL\"><span>Docusaurus</span><span>MDX</span><span>[Design tool]</span></div></div><div><span class=\"tool-number_hM1A\">04</span><h4>Development workflow</h4><div class=\"tags_aapL\"><span>GitHub</span><span>npm</span><span>[Editor]</span></div></div></div><div class=\"exploring-row_Ujcb\"><div><span class=\"explore-marker_WHFq\" aria-hidden=\"true\">+</span><h3>Currently exploring</h3></div><p>[Add tools or topics you're actively learning.]</p></div>",
+        "<div class=\"container_nTbg\"><div class=\"philosophy-top_LufP\"><p class=\"eyebrow_La_K\">06 / A SIMPLE COMPASS</p><h2 id=\"philosophy-title\">How I learn and create.</h2></div><p class=\"motto_c7hY\">Learn.<br>Create.<br><span>Contribute.</span></p><div class=\"philosophy-bottom_N7V6\"><svg viewBox=\"0 0 72 72\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M36 0v72M0 36h72M10 10l52 52M10 62 62 10\"></path></svg><p lang=\"vi\">Học hỏi để hiểu biết.<br>Sáng tạo để khám phá.<br>Chia sẻ để cùng phát triển.</p><span>THE CYCLE CONTINUES ↗</span></div></div>",
+        "<header><p class=\"eyebrow_La_K\">07 / KEEP THE CONVERSATION GOING</p><h2 id=\"contact-title\">Let's<br>connect<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A question, an idea, or a shared curiosity.<br>Good conversations can start small.</p></header><div class=\"contact-list_Eji9\"><div><span>Email</span><span>[Your public email]</span></div><div><span>GitHub</span><span>[Your GitHub profile]</span></div><div><span>Facebook</span><span>[Your public profile]</span></div><div><span>Elsewhere</span><span>[Another place to connect]</span></div><p class=\"content-note_iLNW\">Contact destinations will become links after confirmation.</p></div>"
+      ],
+      "animations": 0,
+      "frameMatches": true,
+      "typographyMatches": true,
+      "otherSectionsUnchanged": true
+    },
+    {
+      "name": "desktop",
+      "theme": "dark",
+      "hero": {
+        "width": 1320,
+        "height": 696
+      },
+      "frame": {
+        "width": 420,
+        "height": 525
+      },
+      "monogram": {
+        "width": 248.5,
+        "height": 180
+      },
+      "nameFont": "74px",
+      "sections": 8,
+      "overflow": false,
+      "otherSections": [
+        "<header><p class=\"eyebrow_La_K\">01 / THE PERSON BEHIND THE SCREEN</p><h2 id=\"about-title\">A little<br>about me<span class=\"blue_xU1H\">.</span></h2></header><div class=\"\"><p class=\"lead_JuoR\">[Your story starts here. Introduce yourself and what connects you to technology and education.]</p><div class=\"story-columns_RWDw\"><div><h3>Where I started</h3><p>[A few lines about your background and the experiences that shaped your interests.]</p></div><div><h3>What keeps me curious</h3><p>[Your approach to learning, experimenting, and sharing useful things with others.]</p></div></div><p class=\"editorial-note_Ylm7\"><span aria-hidden=\"true\">↳</span>[One honest sentence about what you're focused on right now.]</p></div>",
+        "<div class=\"container_nTbg section_y05o\"><div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">02 / CURIOSITY, IN FOUR DIRECTIONS</p><h2 id=\"interests-title\">What I'm exploring<span class=\"blue_xU1H\">.</span></h2></header><p>Different disciplines.<br>A shared interest in making learning better.</p></div><div class=\"interest-grid_Pu9c\"><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg><span>01</span></div><h3>Educational technology</h3><p>Exploring how digital tools can make knowledge easier to access, understand, and put into practice.</p><span class=\"topic_QYM0\">LEARNING × TECHNOLOGY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg><span>02</span></div><h3>Programming &amp; algorithms</h3><p>Breaking problems into smaller pieces. Finding clarity through logic, patterns, and experimentation.</p><span class=\"topic_QYM0\">LOGIC × POSSIBILITY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg><span>03</span></div><h3>Digital content creation</h3><p>Turning ideas into thoughtful learning materials, visual explanations, and interactive experiences.</p><span class=\"topic_QYM0\">IDEAS × EXPRESSION</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"18\" rx=\"2\"></rect><path d=\"M2 9h20M6 6h.01M10 6h.01M10 9v12\"></path></svg><span>04</span></div><h3>Web development</h3><p>Connecting content, design, and code to build useful spaces on the web.</p><span class=\"topic_QYM0\">DESIGN × CODE</span></article></div><p class=\"content-note_iLNW\">Interest descriptions are proposed copy for review.</p></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">03 / IDEAS INTO SOMETHING REAL</p><h2 id=\"projects-title\">Things I've been building<span class=\"blue_xU1H\">.</span></h2></header><p>A closer look at the work.<br>The process matters, too.</p></div><article class=\"featured-project_ZV2E\"><div class=\"project-preview_YPRE\" role=\"img\" aria-label=\"Abstract interface study for Blog Tin Học, not a screenshot\"><div class=\"preview-index_Iuuj\">FEATURED / EDUCATIONAL WEBSITE</div><div class=\"mini-browser_R_I_\" aria-hidden=\"true\"><div class=\"mini-bar_OMVI\"><span class=\"mini-brand_BRhV\">Blog Tin Học</span><span>LEARN · EXPLORE · CREATE</span></div><div class=\"mini-body_QTUw\"><span class=\"mini-label_LH1I\">KHÔNG GIAN HỌC TẬP SỐ</span><strong>Khám phá tri thức.<br><span>Sáng tạo mỗi ngày.</span></strong><div class=\"mini-rule_QeM4\"></div><div class=\"mini-tiles_Ynq4\"><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></span></div></div></div><span class=\"preview-caption_K6US\">ABSTRACT INTERFACE STUDY</span></div><div class=\"featured-copy_S9JB\"><div class=\"project-kicker_kH2P\"><span>01 / WEB &amp; EDUCATION</span><span class=\"status_NFLi\">Existing website</span></div><h3>Blog Tin Học</h3><p>An educational website with documentation, blog posts, and a Python learning page.</p><p class=\"project-detail__fbE\">[Add your contribution, the problem you set out to solve, and what you learned.]</p><div class=\"tags_aapL\"><span>Docusaurus</span><span>React</span><span>TypeScript</span><span>MDX</span></div><div class=\"project-links_Zt65\"><a href=\"/tech-blog/\">Visit website<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a><a href=\"https://github.com/Duongnam2810/tech-blog\" target=\"_blank\" rel=\"noopener noreferrer\">Source code<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a></div></div></article><div class=\"project-pair_igiq\"><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>02 / PROGRAMMING</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"project-symbol_NXPM\" aria-hidden=\"true\">[ py ]</div><h3>Python Learning Projects</h3><p>[Describe a real exercise or project, your contribution, and what you learned.]</p><div class=\"tags_aapL\"><span>Python · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>03 / LEARNING RESOURCES</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"slide-study_q4y8\" aria-hidden=\"true\"><span>Learn<br>through play.</span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></div><h3>PowerPoint Learning Resources</h3><p>[Introduce a confirmed learning resource, its audience, and your role in creating it.]</p><div class=\"tags_aapL\"><span>PowerPoint · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article></div><article class=\"project-row_QgML\"><span class=\"row-index_U2uQ\">04</span><div><span class=\"eyebrow_La_K\">EXPERIMENTS / CONCEPT SLOT</span><h3>Digital Learning Experiments</h3><p>[A place for a real experiment when you're ready to share it.]</p><div class=\"tags_aapL\"><span>Technology to confirm</span></div></div><span class=\"status_NFLi\">To confirm</span></article>",
+        "<div class=\"container_nTbg section_y05o split_wDvV\"><div><header><p class=\"eyebrow_La_K\">04 / ALWAYS A LEARNER</p><h2 id=\"journey-title\">My learning<br>journey<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A story told through small steps,<br>questions, and things made along the way.</p></header><p class=\"content-note_iLNW\">Suggested chapter titles.<br>Personal history to be supplied; no dates implied.</p></div><ol class=\"timeline_ZWcb\"><li><span class=\"milestone-index_F3Qg\">01</span><h3>The beginning</h3><p>[Share the experience that first sparked your curiosity.]</p></li><li><span class=\"milestone-index_F3Qg\">02</span><h3>Exploring technology</h3><p>[Describe the subjects and tools you started discovering.]</p></li><li><span class=\"milestone-index_F3Qg\">03</span><h3>Learning and experimenting</h3><p>[Add a real learning experience or early experiment.]</p></li><li class=\"current_uzLR\"><span class=\"milestone-index_F3Qg\">04</span><h3>Building Blog Tin Học</h3><p>[Tell the story behind this website and confirm your role.]</p></li><li><span class=\"milestone-index_F3Qg\">05</span><h3>What's next</h3><p>[Share an intention or question you want to explore next.]</p></li></ol></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">05 / THE EVERYDAY TOOLKIT</p><h2 id=\"tools-title\">Tools I work with<span class=\"blue_xU1H\">.</span></h2></header><p>Tools support the idea.<br>Learning keeps the toolkit evolving.</p></div><div class=\"tool-labels_j4M3\"><h3>Currently using</h3><span>Repository-backed tools; personal use to confirm</span></div><div class=\"tools-table_L7Kv\"><div><span class=\"tool-number_hM1A\">01</span><h4>Web development</h4><div class=\"tags_aapL\"><span>React</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div></div><div><span class=\"tool-number_hM1A\">02</span><h4>Programming</h4><div class=\"tags_aapL\"><span>Python<small>lesson present</small></span></div></div><div><span class=\"tool-number_hM1A\">03</span><h4>Content &amp; design</h4><div class=\"tags_aapL\"><span>Docusaurus</span><span>MDX</span><span>[Design tool]</span></div></div><div><span class=\"tool-number_hM1A\">04</span><h4>Development workflow</h4><div class=\"tags_aapL\"><span>GitHub</span><span>npm</span><span>[Editor]</span></div></div></div><div class=\"exploring-row_Ujcb\"><div><span class=\"explore-marker_WHFq\" aria-hidden=\"true\">+</span><h3>Currently exploring</h3></div><p>[Add tools or topics you're actively learning.]</p></div>",
+        "<div class=\"container_nTbg\"><div class=\"philosophy-top_LufP\"><p class=\"eyebrow_La_K\">06 / A SIMPLE COMPASS</p><h2 id=\"philosophy-title\">How I learn and create.</h2></div><p class=\"motto_c7hY\">Learn.<br>Create.<br><span>Contribute.</span></p><div class=\"philosophy-bottom_N7V6\"><svg viewBox=\"0 0 72 72\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M36 0v72M0 36h72M10 10l52 52M10 62 62 10\"></path></svg><p lang=\"vi\">Học hỏi để hiểu biết.<br>Sáng tạo để khám phá.<br>Chia sẻ để cùng phát triển.</p><span>THE CYCLE CONTINUES ↗</span></div></div>",
+        "<header><p class=\"eyebrow_La_K\">07 / KEEP THE CONVERSATION GOING</p><h2 id=\"contact-title\">Let's<br>connect<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A question, an idea, or a shared curiosity.<br>Good conversations can start small.</p></header><div class=\"contact-list_Eji9\"><div><span>Email</span><span>[Your public email]</span></div><div><span>GitHub</span><span>[Your GitHub profile]</span></div><div><span>Facebook</span><span>[Your public profile]</span></div><div><span>Elsewhere</span><span>[Another place to connect]</span></div><p class=\"content-note_iLNW\">Contact destinations will become links after confirmation.</p></div>"
+      ],
+      "animations": 0,
+      "frameMatches": true,
+      "typographyMatches": true,
+      "otherSectionsUnchanged": true
+    },
+    {
+      "name": "tablet",
+      "theme": "dark",
+      "hero": {
+        "width": 819,
+        "height": 555.875
+      },
+      "frame": {
+        "width": 319.1875,
+        "height": 398.984375
+      },
+      "monogram": {
+        "width": 176.703125,
+        "height": 128
+      },
+      "nameFont": "56px",
+      "sections": 8,
+      "overflow": false,
+      "otherSections": [
+        "<header><p class=\"eyebrow_La_K\">01 / THE PERSON BEHIND THE SCREEN</p><h2 id=\"about-title\">A little<br>about me<span class=\"blue_xU1H\">.</span></h2></header><div class=\"\"><p class=\"lead_JuoR\">[Your story starts here. Introduce yourself and what connects you to technology and education.]</p><div class=\"story-columns_RWDw\"><div><h3>Where I started</h3><p>[A few lines about your background and the experiences that shaped your interests.]</p></div><div><h3>What keeps me curious</h3><p>[Your approach to learning, experimenting, and sharing useful things with others.]</p></div></div><p class=\"editorial-note_Ylm7\"><span aria-hidden=\"true\">↳</span>[One honest sentence about what you're focused on right now.]</p></div>",
+        "<div class=\"container_nTbg section_y05o\"><div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">02 / CURIOSITY, IN FOUR DIRECTIONS</p><h2 id=\"interests-title\">What I'm exploring<span class=\"blue_xU1H\">.</span></h2></header><p>Different disciplines.<br>A shared interest in making learning better.</p></div><div class=\"interest-grid_Pu9c\"><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg><span>01</span></div><h3>Educational technology</h3><p>Exploring how digital tools can make knowledge easier to access, understand, and put into practice.</p><span class=\"topic_QYM0\">LEARNING × TECHNOLOGY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg><span>02</span></div><h3>Programming &amp; algorithms</h3><p>Breaking problems into smaller pieces. Finding clarity through logic, patterns, and experimentation.</p><span class=\"topic_QYM0\">LOGIC × POSSIBILITY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg><span>03</span></div><h3>Digital content creation</h3><p>Turning ideas into thoughtful learning materials, visual explanations, and interactive experiences.</p><span class=\"topic_QYM0\">IDEAS × EXPRESSION</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"18\" rx=\"2\"></rect><path d=\"M2 9h20M6 6h.01M10 6h.01M10 9v12\"></path></svg><span>04</span></div><h3>Web development</h3><p>Connecting content, design, and code to build useful spaces on the web.</p><span class=\"topic_QYM0\">DESIGN × CODE</span></article></div><p class=\"content-note_iLNW\">Interest descriptions are proposed copy for review.</p></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">03 / IDEAS INTO SOMETHING REAL</p><h2 id=\"projects-title\">Things I've been building<span class=\"blue_xU1H\">.</span></h2></header><p>A closer look at the work.<br>The process matters, too.</p></div><article class=\"featured-project_ZV2E\"><div class=\"project-preview_YPRE\" role=\"img\" aria-label=\"Abstract interface study for Blog Tin Học, not a screenshot\"><div class=\"preview-index_Iuuj\">FEATURED / EDUCATIONAL WEBSITE</div><div class=\"mini-browser_R_I_\" aria-hidden=\"true\"><div class=\"mini-bar_OMVI\"><span class=\"mini-brand_BRhV\">Blog Tin Học</span><span>LEARN · EXPLORE · CREATE</span></div><div class=\"mini-body_QTUw\"><span class=\"mini-label_LH1I\">KHÔNG GIAN HỌC TẬP SỐ</span><strong>Khám phá tri thức.<br><span>Sáng tạo mỗi ngày.</span></strong><div class=\"mini-rule_QeM4\"></div><div class=\"mini-tiles_Ynq4\"><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></span></div></div></div><span class=\"preview-caption_K6US\">ABSTRACT INTERFACE STUDY</span></div><div class=\"featured-copy_S9JB\"><div class=\"project-kicker_kH2P\"><span>01 / WEB &amp; EDUCATION</span><span class=\"status_NFLi\">Existing website</span></div><h3>Blog Tin Học</h3><p>An educational website with documentation, blog posts, and a Python learning page.</p><p class=\"project-detail__fbE\">[Add your contribution, the problem you set out to solve, and what you learned.]</p><div class=\"tags_aapL\"><span>Docusaurus</span><span>React</span><span>TypeScript</span><span>MDX</span></div><div class=\"project-links_Zt65\"><a href=\"/tech-blog/\">Visit website<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a><a href=\"https://github.com/Duongnam2810/tech-blog\" target=\"_blank\" rel=\"noopener noreferrer\">Source code<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a></div></div></article><div class=\"project-pair_igiq\"><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>02 / PROGRAMMING</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"project-symbol_NXPM\" aria-hidden=\"true\">[ py ]</div><h3>Python Learning Projects</h3><p>[Describe a real exercise or project, your contribution, and what you learned.]</p><div class=\"tags_aapL\"><span>Python · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>03 / LEARNING RESOURCES</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"slide-study_q4y8\" aria-hidden=\"true\"><span>Learn<br>through play.</span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></div><h3>PowerPoint Learning Resources</h3><p>[Introduce a confirmed learning resource, its audience, and your role in creating it.]</p><div class=\"tags_aapL\"><span>PowerPoint · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article></div><article class=\"project-row_QgML\"><span class=\"row-index_U2uQ\">04</span><div><span class=\"eyebrow_La_K\">EXPERIMENTS / CONCEPT SLOT</span><h3>Digital Learning Experiments</h3><p>[A place for a real experiment when you're ready to share it.]</p><div class=\"tags_aapL\"><span>Technology to confirm</span></div></div><span class=\"status_NFLi\">To confirm</span></article>",
+        "<div class=\"container_nTbg section_y05o split_wDvV\"><div><header><p class=\"eyebrow_La_K\">04 / ALWAYS A LEARNER</p><h2 id=\"journey-title\">My learning<br>journey<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A story told through small steps,<br>questions, and things made along the way.</p></header><p class=\"content-note_iLNW\">Suggested chapter titles.<br>Personal history to be supplied; no dates implied.</p></div><ol class=\"timeline_ZWcb\"><li><span class=\"milestone-index_F3Qg\">01</span><h3>The beginning</h3><p>[Share the experience that first sparked your curiosity.]</p></li><li><span class=\"milestone-index_F3Qg\">02</span><h3>Exploring technology</h3><p>[Describe the subjects and tools you started discovering.]</p></li><li><span class=\"milestone-index_F3Qg\">03</span><h3>Learning and experimenting</h3><p>[Add a real learning experience or early experiment.]</p></li><li class=\"current_uzLR\"><span class=\"milestone-index_F3Qg\">04</span><h3>Building Blog Tin Học</h3><p>[Tell the story behind this website and confirm your role.]</p></li><li><span class=\"milestone-index_F3Qg\">05</span><h3>What's next</h3><p>[Share an intention or question you want to explore next.]</p></li></ol></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">05 / THE EVERYDAY TOOLKIT</p><h2 id=\"tools-title\">Tools I work with<span class=\"blue_xU1H\">.</span></h2></header><p>Tools support the idea.<br>Learning keeps the toolkit evolving.</p></div><div class=\"tool-labels_j4M3\"><h3>Currently using</h3><span>Repository-backed tools; personal use to confirm</span></div><div class=\"tools-table_L7Kv\"><div><span class=\"tool-number_hM1A\">01</span><h4>Web development</h4><div class=\"tags_aapL\"><span>React</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div></div><div><span class=\"tool-number_hM1A\">02</span><h4>Programming</h4><div class=\"tags_aapL\"><span>Python<small>lesson present</small></span></div></div><div><span class=\"tool-number_hM1A\">03</span><h4>Content &amp; design</h4><div class=\"tags_aapL\"><span>Docusaurus</span><span>MDX</span><span>[Design tool]</span></div></div><div><span class=\"tool-number_hM1A\">04</span><h4>Development workflow</h4><div class=\"tags_aapL\"><span>GitHub</span><span>npm</span><span>[Editor]</span></div></div></div><div class=\"exploring-row_Ujcb\"><div><span class=\"explore-marker_WHFq\" aria-hidden=\"true\">+</span><h3>Currently exploring</h3></div><p>[Add tools or topics you're actively learning.]</p></div>",
+        "<div class=\"container_nTbg\"><div class=\"philosophy-top_LufP\"><p class=\"eyebrow_La_K\">06 / A SIMPLE COMPASS</p><h2 id=\"philosophy-title\">How I learn and create.</h2></div><p class=\"motto_c7hY\">Learn.<br>Create.<br><span>Contribute.</span></p><div class=\"philosophy-bottom_N7V6\"><svg viewBox=\"0 0 72 72\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M36 0v72M0 36h72M10 10l52 52M10 62 62 10\"></path></svg><p lang=\"vi\">Học hỏi để hiểu biết.<br>Sáng tạo để khám phá.<br>Chia sẻ để cùng phát triển.</p><span>THE CYCLE CONTINUES ↗</span></div></div>",
+        "<header><p class=\"eyebrow_La_K\">07 / KEEP THE CONVERSATION GOING</p><h2 id=\"contact-title\">Let's<br>connect<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A question, an idea, or a shared curiosity.<br>Good conversations can start small.</p></header><div class=\"contact-list_Eji9\"><div><span>Email</span><span>[Your public email]</span></div><div><span>GitHub</span><span>[Your GitHub profile]</span></div><div><span>Facebook</span><span>[Your public profile]</span></div><div><span>Elsewhere</span><span>[Another place to connect]</span></div><p class=\"content-note_iLNW\">Contact destinations will become links after confirmation.</p></div>"
+      ],
+      "animations": 0,
+      "frameMatches": true,
+      "typographyMatches": true,
+      "otherSectionsUnchanged": true
+    },
+    {
+      "name": "mobile",
+      "theme": "dark",
+      "hero": {
+        "width": 375,
+        "height": 1006.65625
+      },
+      "frame": {
+        "width": 280,
+        "height": 350
+      },
+      "monogram": {
+        "width": 182.234375,
+        "height": 132
+      },
+      "nameFont": "60px",
+      "sections": 8,
+      "overflow": false,
+      "otherSections": [
+        "<header><p class=\"eyebrow_La_K\">01 / THE PERSON BEHIND THE SCREEN</p><h2 id=\"about-title\">A little<br>about me<span class=\"blue_xU1H\">.</span></h2></header><div class=\"\"><p class=\"lead_JuoR\">[Your story starts here. Introduce yourself and what connects you to technology and education.]</p><div class=\"story-columns_RWDw\"><div><h3>Where I started</h3><p>[A few lines about your background and the experiences that shaped your interests.]</p></div><div><h3>What keeps me curious</h3><p>[Your approach to learning, experimenting, and sharing useful things with others.]</p></div></div><p class=\"editorial-note_Ylm7\"><span aria-hidden=\"true\">↳</span>[One honest sentence about what you're focused on right now.]</p></div>",
+        "<div class=\"container_nTbg section_y05o\"><div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">02 / CURIOSITY, IN FOUR DIRECTIONS</p><h2 id=\"interests-title\">What I'm exploring<span class=\"blue_xU1H\">.</span></h2></header><p>Different disciplines.<br>A shared interest in making learning better.</p></div><div class=\"interest-grid_Pu9c\"><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg><span>01</span></div><h3>Educational technology</h3><p>Exploring how digital tools can make knowledge easier to access, understand, and put into practice.</p><span class=\"topic_QYM0\">LEARNING × TECHNOLOGY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg><span>02</span></div><h3>Programming &amp; algorithms</h3><p>Breaking problems into smaller pieces. Finding clarity through logic, patterns, and experimentation.</p><span class=\"topic_QYM0\">LOGIC × POSSIBILITY</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg><span>03</span></div><h3>Digital content creation</h3><p>Turning ideas into thoughtful learning materials, visual explanations, and interactive experiences.</p><span class=\"topic_QYM0\">IDEAS × EXPRESSION</span></article><article class=\"interest_Zb6b\"><div class=\"interest-top_LnxE\"><svg viewBox=\"0 0 24 24\" class=\"icon__yNw interest-icon_JxNh\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"18\" rx=\"2\"></rect><path d=\"M2 9h20M6 6h.01M10 6h.01M10 9v12\"></path></svg><span>04</span></div><h3>Web development</h3><p>Connecting content, design, and code to build useful spaces on the web.</p><span class=\"topic_QYM0\">DESIGN × CODE</span></article></div><p class=\"content-note_iLNW\">Interest descriptions are proposed copy for review.</p></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">03 / IDEAS INTO SOMETHING REAL</p><h2 id=\"projects-title\">Things I've been building<span class=\"blue_xU1H\">.</span></h2></header><p>A closer look at the work.<br>The process matters, too.</p></div><article class=\"featured-project_ZV2E\"><div class=\"project-preview_YPRE\" role=\"img\" aria-label=\"Abstract interface study for Blog Tin Học, not a screenshot\"><div class=\"preview-index_Iuuj\">FEATURED / EDUCATIONAL WEBSITE</div><div class=\"mini-browser_R_I_\" aria-hidden=\"true\"><div class=\"mini-bar_OMVI\"><span class=\"mini-brand_BRhV\">Blog Tin Học</span><span>LEARN · EXPLORE · CREATE</span></div><div class=\"mini-body_QTUw\"><span class=\"mini-label_LH1I\">KHÔNG GIAN HỌC TẬP SỐ</span><strong>Khám phá tri thức.<br><span>Sáng tạo mỗi ngày.</span></strong><div class=\"mini-rule_QeM4\"></div><div class=\"mini-tiles_Ynq4\"><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18\"></path></svg></span><span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></span></div></div></div><span class=\"preview-caption_K6US\">ABSTRACT INTERFACE STUDY</span></div><div class=\"featured-copy_S9JB\"><div class=\"project-kicker_kH2P\"><span>01 / WEB &amp; EDUCATION</span><span class=\"status_NFLi\">Existing website</span></div><h3>Blog Tin Học</h3><p>An educational website with documentation, blog posts, and a Python learning page.</p><p class=\"project-detail__fbE\">[Add your contribution, the problem you set out to solve, and what you learned.]</p><div class=\"tags_aapL\"><span>Docusaurus</span><span>React</span><span>TypeScript</span><span>MDX</span></div><div class=\"project-links_Zt65\"><a href=\"/tech-blog/\">Visit website<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a><a href=\"https://github.com/Duongnam2810/tech-blog\" target=\"_blank\" rel=\"noopener noreferrer\">Source code<svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"></path></svg></a></div></div></article><div class=\"project-pair_igiq\"><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>02 / PROGRAMMING</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"project-symbol_NXPM\" aria-hidden=\"true\">[ py ]</div><h3>Python Learning Projects</h3><p>[Describe a real exercise or project, your contribution, and what you learned.]</p><div class=\"tags_aapL\"><span>Python · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article><article class=\"project-small_LZzW\"><div class=\"project-kicker_kH2P\"><span>03 / LEARNING RESOURCES</span><span class=\"status_NFLi\">To confirm</span></div><div class=\"slide-study_q4y8\" aria-hidden=\"true\"><span>Learn<br>through play.</span><svg viewBox=\"0 0 24 24\" class=\"icon__yNw \" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 2 10 6-10 6L2 8Zm-9 11 9 5 9-5M3 18l9 5 9-5\"></path></svg></div><h3>PowerPoint Learning Resources</h3><p>[Introduce a confirmed learning resource, its audience, and your role in creating it.]</p><div class=\"tags_aapL\"><span>PowerPoint · proposed</span></div><p class=\"project-foot_eP58\">Project details &amp; destination pending</p></article></div><article class=\"project-row_QgML\"><span class=\"row-index_U2uQ\">04</span><div><span class=\"eyebrow_La_K\">EXPERIMENTS / CONCEPT SLOT</span><h3>Digital Learning Experiments</h3><p>[A place for a real experiment when you're ready to share it.]</p><div class=\"tags_aapL\"><span>Technology to confirm</span></div></div><span class=\"status_NFLi\">To confirm</span></article>",
+        "<div class=\"container_nTbg section_y05o split_wDvV\"><div><header><p class=\"eyebrow_La_K\">04 / ALWAYS A LEARNER</p><h2 id=\"journey-title\">My learning<br>journey<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A story told through small steps,<br>questions, and things made along the way.</p></header><p class=\"content-note_iLNW\">Suggested chapter titles.<br>Personal history to be supplied; no dates implied.</p></div><ol class=\"timeline_ZWcb\"><li><span class=\"milestone-index_F3Qg\">01</span><h3>The beginning</h3><p>[Share the experience that first sparked your curiosity.]</p></li><li><span class=\"milestone-index_F3Qg\">02</span><h3>Exploring technology</h3><p>[Describe the subjects and tools you started discovering.]</p></li><li><span class=\"milestone-index_F3Qg\">03</span><h3>Learning and experimenting</h3><p>[Add a real learning experience or early experiment.]</p></li><li class=\"current_uzLR\"><span class=\"milestone-index_F3Qg\">04</span><h3>Building Blog Tin Học</h3><p>[Tell the story behind this website and confirm your role.]</p></li><li><span class=\"milestone-index_F3Qg\">05</span><h3>What's next</h3><p>[Share an intention or question you want to explore next.]</p></li></ol></div>",
+        "<div class=\"section-heading_JBUv\"><header><p class=\"eyebrow_La_K\">05 / THE EVERYDAY TOOLKIT</p><h2 id=\"tools-title\">Tools I work with<span class=\"blue_xU1H\">.</span></h2></header><p>Tools support the idea.<br>Learning keeps the toolkit evolving.</p></div><div class=\"tool-labels_j4M3\"><h3>Currently using</h3><span>Repository-backed tools; personal use to confirm</span></div><div class=\"tools-table_L7Kv\"><div><span class=\"tool-number_hM1A\">01</span><h4>Web development</h4><div class=\"tags_aapL\"><span>React</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div></div><div><span class=\"tool-number_hM1A\">02</span><h4>Programming</h4><div class=\"tags_aapL\"><span>Python<small>lesson present</small></span></div></div><div><span class=\"tool-number_hM1A\">03</span><h4>Content &amp; design</h4><div class=\"tags_aapL\"><span>Docusaurus</span><span>MDX</span><span>[Design tool]</span></div></div><div><span class=\"tool-number_hM1A\">04</span><h4>Development workflow</h4><div class=\"tags_aapL\"><span>GitHub</span><span>npm</span><span>[Editor]</span></div></div></div><div class=\"exploring-row_Ujcb\"><div><span class=\"explore-marker_WHFq\" aria-hidden=\"true\">+</span><h3>Currently exploring</h3></div><p>[Add tools or topics you're actively learning.]</p></div>",
+        "<div class=\"container_nTbg\"><div class=\"philosophy-top_LufP\"><p class=\"eyebrow_La_K\">06 / A SIMPLE COMPASS</p><h2 id=\"philosophy-title\">How I learn and create.</h2></div><p class=\"motto_c7hY\">Learn.<br>Create.<br><span>Contribute.</span></p><div class=\"philosophy-bottom_N7V6\"><svg viewBox=\"0 0 72 72\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M36 0v72M0 36h72M10 10l52 52M10 62 62 10\"></path></svg><p lang=\"vi\">Học hỏi để hiểu biết.<br>Sáng tạo để khám phá.<br>Chia sẻ để cùng phát triển.</p><span>THE CYCLE CONTINUES ↗</span></div></div>",
+        "<header><p class=\"eyebrow_La_K\">07 / KEEP THE CONVERSATION GOING</p><h2 id=\"contact-title\">Let's<br>connect<span class=\"blue_xU1H\">.</span></h2><p class=\"section-description__ISe\">A question, an idea, or a shared curiosity.<br>Good conversations can start small.</p></header><div class=\"contact-list_Eji9\"><div><span>Email</span><span>[Your public email]</span></div><div><span>GitHub</span><span>[Your GitHub profile]</span></div><div><span>Facebook</span><span>[Your public profile]</span></div><div><span>Elsewhere</span><span>[Another place to connect]</span></div><p class=\"content-note_iLNW\">Contact destinations will become links after confirmation.</p></div>"
+      ],
+      "animations": 0,
+      "frameMatches": true,
+      "typographyMatches": true,
+      "otherSectionsUnchanged": true
+    }
+  ],
+  "widths": [
+    {
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "width": 576,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 996,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "overflow": false
+    }
+  ],
+  "links": [],
+  "interactions": {
+    "motion": {
+      "active": "true",
+      "animations": [
+        {
+          "name": "hero-enter_Y1WX",
+          "state": "finished",
+          "duration": 520,
+          "iterations": "1"
+        },
+        {
+          "name": "hero-enter_Y1WX",
+          "state": "finished",
+          "duration": 560,
+          "iterations": "1"
+        },
+        {
+          "name": "hero-enter_Y1WX",
+          "state": "finished",
+          "duration": 560,
+          "iterations": "1"
+        },
+        {
+          "name": "hero-enter_Y1WX",
+          "state": "finished",
+          "duration": 560,
+          "iterations": "1"
+        },
+        {
+          "name": "hero-enter_Y1WX",
+          "state": "finished",
+          "duration": 560,
+          "iterations": "1"
+        },
+        {
+          "name": "hero-enter_Y1WX",
+          "state": "finished",
+          "duration": 560,
+          "iterations": "1"
+        },
+        {
+          "name": "hero-enter_Y1WX",
+          "state": "finished",
+          "duration": 560,
+          "iterations": "1"
+        },
+        {
+          "name": "technical-float_YeiQ",
+          "state": "running",
+          "duration": 6000,
+          "iterations": "Infinity"
+        },
+        {
+          "name": "grid-scan_dYRD",
+          "state": "running",
+          "duration": 22000,
+          "iterations": "Infinity"
+        },
+        {
+          "name": "orbit-forward_gmEG",
+          "state": "running",
+          "duration": 32000,
+          "iterations": "Infinity"
+        },
+        {
+          "name": "dot-forward_O9rg",
+          "state": "running",
+          "duration": 28000,
+          "iterations": "Infinity"
+        },
+        {
+          "name": "orbit-reverse_Uhul",
+          "state": "running",
+          "duration": 40000,
+          "iterations": "Infinity"
+        },
+        {
+          "name": "dot-reverse_dPrf",
+          "state": "running",
+          "duration": 36000,
+          "iterations": "Infinity"
+        },
+        {
+          "name": "monogram-enter_d88r",
+          "state": "finished",
+          "duration": 680,
+          "iterations": "1"
+        },
+        {
+          "name": "monogram-float_Z0qR",
+          "state": "running",
+          "duration": 6000,
+          "iterations": "Infinity"
+        },
+        {
+          "name": "label-breathe_SDXH",
+          "state": "running",
+          "duration": 6000,
+          "iterations": "Infinity"
+        },
+        {
+          "name": "technical-float_YeiQ",
+          "state": "running",
+          "duration": 5000,
+          "iterations": "Infinity"
+        }
+      ],
+      "dot": "24.6427%",
+      "orbit": "matrix(0.964209, -0.265145, 0.265145, 0.964209, 0, 0)"
+    },
+    "orbitAfter": "matrix(0.986101, -0.166146, 0.166146, 0.986101, 0, 0)",
+    "dotAfter": "26.4877%",
+    "hover": {
+      "matches": true,
+      "shadow": "rgba(53, 106, 230, 0.09) 0px 12px 28px 0px",
+      "border": "rgb(53, 106, 230)",
+      "transform": "matrix(1, 0, 0, 1, 0, -2)"
+    },
+    "pause": {
+      "pressed": "true",
+      "active": "false",
+      "running": 0,
+      "details": []
+    },
+    "offscreen": "false",
+    "returned": "true",
+    "hiddenEvent": "false",
+    "reduced": {
+      "running": 0,
+      "buttonDisplay": "none",
+      "opacity": "1",
+      "monogramTransform": "matrix(1, 0, 0, 1, -8, -8)"
+    }
+  },
+  "errors": [],
+  "route": {
+    "url": "/tech-blog/about",
+    "status": 200
+  },
+  "mobileMotion": [
+    {
+      "theme": "light",
+      "scan": "none",
+      "orbitTwo": "none",
+      "orbitOne": "40s",
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "scan": "none",
+      "orbitTwo": "none",
+      "orbitOne": "40s",
+      "overflow": false
+    }
+  ],
+  "passed": true
+}

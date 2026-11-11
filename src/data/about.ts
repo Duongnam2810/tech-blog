@@ -32,25 +32,27 @@ export const pageMetadata = {
 };
 
 export const profile = {
-  eyebrow: 'A PERSONAL TECH PROFILE',
-  greeting: "Hello, I'm",
+  eyebrow: 'HỒ SƠ CÔNG NGHỆ CÁ NHÂN',
+  greeting: 'Xin chào, tôi là',
   // Each entry is a display line. The last line receives the blue accent.
   nameLines: ['[Dương', 'Nam.]'],
   initials: 'Aa',
-  role: '[Your role, in your own words.]',
-  introduction: '[A short introduction to your curiosity about technology, learning, and making knowledge more accessible.]',
-  projectsLabel: 'Explore my projects',
-  contactLabel: 'Get in touch',
-  caption: 'A space for ideas, experiments & things worth sharing.',
+  role: '[Vai trò của bạn.]',
+  introduction: '[Giới thiệu ngắn về sự quan tâm của bạn với công nghệ, học tập và chia sẻ tri thức.]',
+  projectsLabel: 'Khám phá dự án',
+  contactLabel: 'Liên hệ',
+  caption: 'Không gian cho ý tưởng và điều đáng chia sẻ.',
   // Optional: set to {src: '/img/portrait.webp', alt: 'Your approved portrait description'}.
   portrait: undefined as {src: string; alt: string} | undefined,
   visual: {
-    label: 'Abstract geometric identity composition; initials placeholder',
-    heading: 'IDENTITY / IN PROGRESS',
-    coordinates: ['x: curiosity', 'y: possibility'],
-    footer: 'LEARN / CREATE / CONTRIBUTE',
-    caption: '01 / A work in progress.',
-    captionDetail: 'Initials placeholder',
+    label: 'Đồ họa hình học trừu tượng; chữ viết tắt minh họa',
+    heading: 'DẤU ẤN / ĐANG HOÀN THIỆN',
+    coordinates: ['x: tò mò', 'y: khám phá'],
+    footer: 'HỌC / SÁNG TẠO / CHIA SẺ',
+    caption: '01 / Đang hoàn thiện.',
+    captionDetail: 'Chữ viết tắt minh họa',
+    pauseLabel: 'Tạm dừng chuyển động',
+    resumeLabel: 'Tiếp tục chuyển động',
   },
 };
 

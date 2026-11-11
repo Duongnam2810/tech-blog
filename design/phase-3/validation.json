@@ -1,0 +1,1182 @@
+{
+  "views": [
+    {
+      "name": "desktop",
+      "theme": "light",
+      "file": "desktop-light.png",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "height": 5769,
+      "sections": [
+        {
+          "id": "hero",
+          "x": 52.5,
+          "y": 68,
+          "width": 1320,
+          "height": 696
+        },
+        {
+          "id": "about",
+          "x": 52.5,
+          "y": 830.390625,
+          "width": 1320,
+          "height": 423.21875
+        },
+        {
+          "id": "interests",
+          "x": 0,
+          "y": 1253.609375,
+          "width": 1425,
+          "height": 612.140625
+        },
+        {
+          "id": "projects",
+          "x": 52.5,
+          "y": 1865.75,
+          "width": 1320,
+          "height": 1339.71875
+        },
+        {
+          "id": "journey",
+          "x": 0,
+          "y": 3205.46875,
+          "width": 1425,
+          "height": 555.671875
+        },
+        {
+          "id": "tools",
+          "x": 52.5,
+          "y": 3761.140625,
+          "width": 1320,
+          "height": 656.53125
+        },
+        {
+          "id": "philosophy",
+          "x": 0,
+          "y": 4417.671875,
+          "width": 1425,
+          "height": 693.90625
+        },
+        {
+          "id": "contact",
+          "x": 52.5,
+          "y": 5111.578125,
+          "width": 1320,
+          "height": 462.390625
+        }
+      ],
+      "h1": {
+        "text": "[Your name.]",
+        "font": "74px",
+        "x": 68.5,
+        "y": 265.390625,
+        "width": 409.59375,
+        "height": 159.8125
+      },
+      "headings": [
+        {
+          "text": "A littleabout me.",
+          "font": "38px"
+        },
+        {
+          "text": "What I'm exploring.",
+          "font": "38px"
+        },
+        {
+          "text": "Things I've been building.",
+          "font": "38px"
+        },
+        {
+          "text": "My learningjourney.",
+          "font": "38px"
+        },
+        {
+          "text": "Tools I work with.",
+          "font": "38px"
+        },
+        {
+          "text": "How I learn and create.",
+          "font": "15px"
+        },
+        {
+          "text": "Let'sconnect.",
+          "font": "56px"
+        }
+      ],
+      "overflow": [],
+      "brokenAnchors": [],
+      "imageFailures": [],
+      "primary": [
+        {
+          "text": "Explore my projects",
+          "x": 68.5,
+          "y": 584.796875,
+          "width": 207.09375,
+          "height": 49.796875
+        },
+        {
+          "text": "Get in touch",
+          "x": 287.59375,
+          "y": 584.796875,
+          "width": 122.453125,
+          "height": 49.796875
+        }
+      ],
+      "font": true,
+      "comparison": [
+        {
+          "id": "hero",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "about",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "interests",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "projects",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "journey",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "tools",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "philosophy",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "contact",
+          "widthDelta": 0,
+          "heightDelta": 0
+        }
+      ],
+      "headingFontsMatch": true
+    },
+    {
+      "name": "tablet",
+      "theme": "light",
+      "file": "tablet-light.png",
+      "width": 834,
+      "scrollWidth": 819,
+      "height": 6398,
+      "sections": [
+        {
+          "id": "hero",
+          "x": 0,
+          "y": 60.796875,
+          "width": 819,
+          "height": 555.875
+        },
+        {
+          "id": "about",
+          "x": 0,
+          "y": 686.671875,
+          "width": 819,
+          "height": 516.25
+        },
+        {
+          "id": "interests",
+          "x": 0,
+          "y": 1202.921875,
+          "width": 819,
+          "height": 742.90625
+        },
+        {
+          "id": "projects",
+          "x": 0,
+          "y": 1945.828125,
+          "width": 819,
+          "height": 1631.5
+        },
+        {
+          "id": "journey",
+          "x": 0,
+          "y": 3577.328125,
+          "width": 819,
+          "height": 595.0625
+        },
+        {
+          "id": "tools",
+          "x": 0,
+          "y": 4172.390625,
+          "width": 819,
+          "height": 636.640625
+        },
+        {
+          "id": "philosophy",
+          "x": 0,
+          "y": 4809.03125,
+          "width": 819,
+          "height": 593.625
+        },
+        {
+          "id": "contact",
+          "x": 0,
+          "y": 5402.65625,
+          "width": 819,
+          "height": 500.765625
+        }
+      ],
+      "h1": {
+        "text": "[Your name.]",
+        "font": "56px",
+        "x": 16,
+        "y": 208.078125,
+        "width": 309.96875,
+        "height": 120.9375
+      },
+      "headings": [
+        {
+          "text": "A littleabout me.",
+          "font": "28px"
+        },
+        {
+          "text": "What I'm exploring.",
+          "font": "28px"
+        },
+        {
+          "text": "Things I've been building.",
+          "font": "28px"
+        },
+        {
+          "text": "My learningjourney.",
+          "font": "28px"
+        },
+        {
+          "text": "Tools I work with.",
+          "font": "28px"
+        },
+        {
+          "text": "How I learn and create.",
+          "font": "15px"
+        },
+        {
+          "text": "Let'sconnect.",
+          "font": "40px"
+        }
+      ],
+      "overflow": [],
+      "brokenAnchors": [],
+      "imageFailures": [],
+      "primary": [
+        {
+          "text": "Explore my projects",
+          "x": 16,
+          "y": 476.28125,
+          "width": 175.796875,
+          "height": 48
+        },
+        {
+          "text": "Get in touch",
+          "x": 201.796875,
+          "y": 476.28125,
+          "width": 98.6875,
+          "height": 48
+        }
+      ],
+      "font": true,
+      "comparison": [
+        {
+          "id": "hero",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "about",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "interests",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "projects",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "journey",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "tools",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "philosophy",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "contact",
+          "widthDelta": 0,
+          "heightDelta": 0
+        }
+      ],
+      "headingFontsMatch": true
+    },
+    {
+      "name": "mobile",
+      "theme": "light",
+      "file": "mobile-light.png",
+      "width": 390,
+      "scrollWidth": 375,
+      "height": 8770,
+      "sections": [
+        {
+          "id": "hero",
+          "x": 0,
+          "y": 60.796875,
+          "width": 375,
+          "height": 1035.453125
+        },
+        {
+          "id": "about",
+          "x": 0,
+          "y": 1242.25,
+          "width": 375,
+          "height": 607.546875
+        },
+        {
+          "id": "interests",
+          "x": 0,
+          "y": 1849.796875,
+          "width": 375,
+          "height": 1296.53125
+        },
+        {
+          "id": "projects",
+          "x": 0,
+          "y": 3146.328125,
+          "width": 375,
+          "height": 2257.75
+        },
+        {
+          "id": "journey",
+          "x": 0,
+          "y": 5404.078125,
+          "width": 375,
+          "height": 920.046875
+        },
+        {
+          "id": "tools",
+          "x": 0,
+          "y": 6324.125,
+          "width": 375,
+          "height": 878.203125
+        },
+        {
+          "id": "philosophy",
+          "x": 0,
+          "y": 7202.328125,
+          "width": 375,
+          "height": 498.109375
+        },
+        {
+          "id": "contact",
+          "x": 0,
+          "y": 7700.4375,
+          "width": 375,
+          "height": 574.546875
+        }
+      ],
+      "h1": {
+        "text": "[Your name.]",
+        "font": "60px",
+        "x": 20,
+        "y": 188.484375,
+        "width": 332.109375,
+        "height": 129.59375
+      },
+      "headings": [
+        {
+          "text": "A littleabout me.",
+          "font": "32px"
+        },
+        {
+          "text": "What I'm exploring.",
+          "font": "32px"
+        },
+        {
+          "text": "Things I've been building.",
+          "font": "32px"
+        },
+        {
+          "text": "My learningjourney.",
+          "font": "32px"
+        },
+        {
+          "text": "Tools I work with.",
+          "font": "32px"
+        },
+        {
+          "text": "How I learn and create.",
+          "font": "16px"
+        },
+        {
+          "text": "Let'sconnect.",
+          "font": "46.8px"
+        }
+      ],
+      "overflow": [],
+      "brokenAnchors": [],
+      "imageFailures": [],
+      "primary": [
+        {
+          "text": "Explore my projects",
+          "x": 20,
+          "y": 493.0625,
+          "width": 335,
+          "height": 48
+        },
+        {
+          "text": "Get in touch",
+          "x": 20,
+          "y": 553.0625,
+          "width": 335,
+          "height": 49.796875
+        }
+      ],
+      "font": true,
+      "comparison": [
+        {
+          "id": "hero",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "about",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "interests",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "projects",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "journey",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "tools",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "philosophy",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "contact",
+          "widthDelta": 0,
+          "heightDelta": 0
+        }
+      ],
+      "headingFontsMatch": true
+    },
+    {
+      "name": "desktop",
+      "theme": "dark",
+      "file": "desktop-dark.png",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "height": 5769,
+      "sections": [
+        {
+          "id": "hero",
+          "x": 52.5,
+          "y": 68,
+          "width": 1320,
+          "height": 696
+        },
+        {
+          "id": "about",
+          "x": 52.5,
+          "y": 830.390625,
+          "width": 1320,
+          "height": 423.21875
+        },
+        {
+          "id": "interests",
+          "x": 0,
+          "y": 1253.609375,
+          "width": 1425,
+          "height": 612.140625
+        },
+        {
+          "id": "projects",
+          "x": 52.5,
+          "y": 1865.75,
+          "width": 1320,
+          "height": 1339.71875
+        },
+        {
+          "id": "journey",
+          "x": 0,
+          "y": 3205.46875,
+          "width": 1425,
+          "height": 555.671875
+        },
+        {
+          "id": "tools",
+          "x": 52.5,
+          "y": 3761.140625,
+          "width": 1320,
+          "height": 656.53125
+        },
+        {
+          "id": "philosophy",
+          "x": 0,
+          "y": 4417.671875,
+          "width": 1425,
+          "height": 693.90625
+        },
+        {
+          "id": "contact",
+          "x": 52.5,
+          "y": 5111.578125,
+          "width": 1320,
+          "height": 462.390625
+        }
+      ],
+      "h1": {
+        "text": "[Your name.]",
+        "font": "74px",
+        "x": 68.5,
+        "y": 265.390625,
+        "width": 409.59375,
+        "height": 159.8125
+      },
+      "headings": [
+        {
+          "text": "A littleabout me.",
+          "font": "38px"
+        },
+        {
+          "text": "What I'm exploring.",
+          "font": "38px"
+        },
+        {
+          "text": "Things I've been building.",
+          "font": "38px"
+        },
+        {
+          "text": "My learningjourney.",
+          "font": "38px"
+        },
+        {
+          "text": "Tools I work with.",
+          "font": "38px"
+        },
+        {
+          "text": "How I learn and create.",
+          "font": "15px"
+        },
+        {
+          "text": "Let'sconnect.",
+          "font": "56px"
+        }
+      ],
+      "overflow": [],
+      "brokenAnchors": [],
+      "imageFailures": [],
+      "primary": [
+        {
+          "text": "Explore my projects",
+          "x": 68.5,
+          "y": 584.796875,
+          "width": 207.09375,
+          "height": 49.796875
+        },
+        {
+          "text": "Get in touch",
+          "x": 287.59375,
+          "y": 584.796875,
+          "width": 122.453125,
+          "height": 49.796875
+        }
+      ],
+      "font": true,
+      "comparison": [
+        {
+          "id": "hero",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "about",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "interests",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "projects",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "journey",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "tools",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "philosophy",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "contact",
+          "widthDelta": 0,
+          "heightDelta": 0
+        }
+      ],
+      "headingFontsMatch": true
+    },
+    {
+      "name": "tablet",
+      "theme": "dark",
+      "file": "tablet-dark.png",
+      "width": 834,
+      "scrollWidth": 819,
+      "height": 6398,
+      "sections": [
+        {
+          "id": "hero",
+          "x": 0,
+          "y": 60.796875,
+          "width": 819,
+          "height": 555.875
+        },
+        {
+          "id": "about",
+          "x": 0,
+          "y": 686.671875,
+          "width": 819,
+          "height": 516.25
+        },
+        {
+          "id": "interests",
+          "x": 0,
+          "y": 1202.921875,
+          "width": 819,
+          "height": 742.90625
+        },
+        {
+          "id": "projects",
+          "x": 0,
+          "y": 1945.828125,
+          "width": 819,
+          "height": 1631.5
+        },
+        {
+          "id": "journey",
+          "x": 0,
+          "y": 3577.328125,
+          "width": 819,
+          "height": 595.0625
+        },
+        {
+          "id": "tools",
+          "x": 0,
+          "y": 4172.390625,
+          "width": 819,
+          "height": 636.640625
+        },
+        {
+          "id": "philosophy",
+          "x": 0,
+          "y": 4809.03125,
+          "width": 819,
+          "height": 593.625
+        },
+        {
+          "id": "contact",
+          "x": 0,
+          "y": 5402.65625,
+          "width": 819,
+          "height": 500.765625
+        }
+      ],
+      "h1": {
+        "text": "[Your name.]",
+        "font": "56px",
+        "x": 16,
+        "y": 208.078125,
+        "width": 309.96875,
+        "height": 120.9375
+      },
+      "headings": [
+        {
+          "text": "A littleabout me.",
+          "font": "28px"
+        },
+        {
+          "text": "What I'm exploring.",
+          "font": "28px"
+        },
+        {
+          "text": "Things I've been building.",
+          "font": "28px"
+        },
+        {
+          "text": "My learningjourney.",
+          "font": "28px"
+        },
+        {
+          "text": "Tools I work with.",
+          "font": "28px"
+        },
+        {
+          "text": "How I learn and create.",
+          "font": "15px"
+        },
+        {
+          "text": "Let'sconnect.",
+          "font": "40px"
+        }
+      ],
+      "overflow": [],
+      "brokenAnchors": [],
+      "imageFailures": [],
+      "primary": [
+        {
+          "text": "Explore my projects",
+          "x": 16,
+          "y": 476.28125,
+          "width": 175.796875,
+          "height": 48
+        },
+        {
+          "text": "Get in touch",
+          "x": 201.796875,
+          "y": 476.28125,
+          "width": 98.6875,
+          "height": 48
+        }
+      ],
+      "font": true,
+      "comparison": [
+        {
+          "id": "hero",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "about",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "interests",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "projects",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "journey",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "tools",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "philosophy",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "contact",
+          "widthDelta": 0,
+          "heightDelta": 0
+        }
+      ],
+      "headingFontsMatch": true
+    },
+    {
+      "name": "mobile",
+      "theme": "dark",
+      "file": "mobile-dark.png",
+      "width": 390,
+      "scrollWidth": 375,
+      "height": 8770,
+      "sections": [
+        {
+          "id": "hero",
+          "x": 0,
+          "y": 60.796875,
+          "width": 375,
+          "height": 1035.453125
+        },
+        {
+          "id": "about",
+          "x": 0,
+          "y": 1242.25,
+          "width": 375,
+          "height": 607.546875
+        },
+        {
+          "id": "interests",
+          "x": 0,
+          "y": 1849.796875,
+          "width": 375,
+          "height": 1296.53125
+        },
+        {
+          "id": "projects",
+          "x": 0,
+          "y": 3146.328125,
+          "width": 375,
+          "height": 2257.75
+        },
+        {
+          "id": "journey",
+          "x": 0,
+          "y": 5404.078125,
+          "width": 375,
+          "height": 920.046875
+        },
+        {
+          "id": "tools",
+          "x": 0,
+          "y": 6324.125,
+          "width": 375,
+          "height": 878.203125
+        },
+        {
+          "id": "philosophy",
+          "x": 0,
+          "y": 7202.328125,
+          "width": 375,
+          "height": 498.109375
+        },
+        {
+          "id": "contact",
+          "x": 0,
+          "y": 7700.4375,
+          "width": 375,
+          "height": 574.546875
+        }
+      ],
+      "h1": {
+        "text": "[Your name.]",
+        "font": "60px",
+        "x": 20,
+        "y": 188.484375,
+        "width": 332.109375,
+        "height": 129.59375
+      },
+      "headings": [
+        {
+          "text": "A littleabout me.",
+          "font": "32px"
+        },
+        {
+          "text": "What I'm exploring.",
+          "font": "32px"
+        },
+        {
+          "text": "Things I've been building.",
+          "font": "32px"
+        },
+        {
+          "text": "My learningjourney.",
+          "font": "32px"
+        },
+        {
+          "text": "Tools I work with.",
+          "font": "32px"
+        },
+        {
+          "text": "How I learn and create.",
+          "font": "16px"
+        },
+        {
+          "text": "Let'sconnect.",
+          "font": "46.8px"
+        }
+      ],
+      "overflow": [],
+      "brokenAnchors": [],
+      "imageFailures": [],
+      "primary": [
+        {
+          "text": "Explore my projects",
+          "x": 20,
+          "y": 493.0625,
+          "width": 335,
+          "height": 48
+        },
+        {
+          "text": "Get in touch",
+          "x": 20,
+          "y": 553.0625,
+          "width": 335,
+          "height": 49.796875
+        }
+      ],
+      "font": true,
+      "comparison": [
+        {
+          "id": "hero",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "about",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "interests",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "projects",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "journey",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "tools",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "philosophy",
+          "widthDelta": 0,
+          "heightDelta": 0
+        },
+        {
+          "id": "contact",
+          "widthDelta": 0,
+          "heightDelta": 0
+        }
+      ],
+      "headingFontsMatch": true
+    }
+  ],
+  "widths": [
+    {
+      "width": 320,
+      "scrollWidth": 305,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "scrollWidth": 360,
+      "overflow": false
+    },
+    {
+      "width": 576,
+      "scrollWidth": 561,
+      "overflow": false
+    },
+    {
+      "width": 577,
+      "scrollWidth": 562,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "scrollWidth": 753,
+      "overflow": false
+    },
+    {
+      "width": 996,
+      "scrollWidth": 981,
+      "overflow": false
+    },
+    {
+      "width": 997,
+      "scrollWidth": 982,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1009,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "scrollWidth": 1905,
+      "overflow": false
+    }
+  ],
+  "links": [
+    {
+      "href": "/tech-blog/about#__docusaurus_skipToContent_fallback",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/#explore",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/docs/intro",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/docs/python-tutorial/bai-1-lam-quen-python",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/blog",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/about",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "https://github.com/Duongnam2810/tech-blog",
+      "status": 200
+    },
+    {
+      "href": "/tech-blog/about#projects",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/about#contact",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/about#about",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/about#interests",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/about#journey",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/about#tools",
+      "status": 200,
+      "anchorFound": true
+    },
+    {
+      "href": "/tech-blog/about#philosophy",
+      "status": 200,
+      "anchorFound": true
+    }
+  ],
+  "interactions": {
+    "menu": {
+      "expanded": "true",
+      "visible": true
+    },
+    "menuLink": {
+      "closed": true
+    },
+    "cta": "#projects",
+    "ctaTarget": {
+      "hash": "#projects",
+      "top": 80.328125,
+      "navbarBottom": 60.796875
+    },
+    "contact": {
+      "hash": "#contact",
+      "top": 80.4375
+    },
+    "themeBefore": "dark",
+    "themeCycle": [
+      {
+        "theme": "light",
+        "choice": "light"
+      },
+      {
+        "theme": "dark",
+        "choice": "dark"
+      },
+      {
+        "theme": "dark",
+        "choice": "system"
+      }
+    ],
+    "focus": {
+      "active": "Explore my projects",
+      "outline": "3px"
+    },
+    "reducedMotion": {
+      "scroll": "auto",
+      "transition": "0s"
+    },
+    "clientRoute": {
+      "path": "/tech-blog/about",
+      "sections": 8,
+      "heading": "[Your name.]"
+    }
+  },
+  "errors": [],
+  "route": {
+    "url": "/tech-blog/about",
+    "status": 200
+  },
+  "passed": true
+}
