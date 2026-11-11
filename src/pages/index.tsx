@@ -1,506 +1,268 @@
-import type {ReactNode} from 'react';
+﻿import type {ReactNode} from 'react';
+import {useEffect, useState} from 'react';
 import Link from '@docusaurus/Link';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import useBrokenLinks from '@docusaurus/useBrokenLinks';
 import Layout from '@theme/Layout';
-
+import {featuredLesson, grades, pythonLessonPath, resources} from '@site/src/data/home';
+import type {GradeItem, ResourceCategory} from '@site/src/data/home';
+import FeaturedPowerPoint from '@site/src/components/PowerPoint/FeaturedPowerPoint';
 import styles from './index.module.css';
-
-/* ──────────────────────────────────────────────
-   Types
-   ────────────────────────────────────────────── */
-
-type ResourceCategory = {
-  number: string;
-  icon: string;
-  title: string;
-  description: string;
-  detail: string;
-  tone: 'blue' | 'mint' | 'amber' | 'violet';
-  href: string;
-};
-
-type GradeItem = {
-  grade: string;
-  label: string;
-  description: string;
-  accent: string;
-  href: string;
-};
-
-type FeaturedItem = {
-  type: string;
-  typeTone: 'blue' | 'mint' | 'amber' | 'violet';
-  title: string;
-  description: string;
-  grade?: string;
-  subject?: string;
-  href: string;
-};
-
-type ExampleQuestion = {
-  icon: string;
-  text: string;
-};
-
-/* ──────────────────────────────────────────────
-   Data
-   ────────────────────────────────────────────── */
-
-const resources: ResourceCategory[] = [
-  {
-    number: '01',
-    icon: '▤',
-    title: 'Bài giảng',
-    description: 'Hệ thống bài giảng PowerPoint được thiết kế trực quan, dễ hiểu — phục vụ giảng dạy và tự học.',
-    detail: 'KHÁM PHÁ BÀI GIẢNG',
-    tone: 'blue',
-    href: '/docs/intro',
-  },
-  {
-    number: '02',
-    icon: '▣',
-    title: 'Trò chơi PowerPoint',
-    description: 'Hoạt động tương tác trên PowerPoint giúp ôn tập kiến thức qua trải nghiệm thú vị.',
-    detail: 'CHƠI VÀ HỌC',
-    tone: 'mint',
-    href: '/docs/intro',
-  },
-  {
-    number: '03',
-    icon: '▧',
-    title: 'Tài liệu',
-    description: 'Phiếu học tập, tài liệu tham khảo và các tệp tải xuống hỗ trợ học tập.',
-    detail: 'TẢI TÀI LIỆU',
-    tone: 'amber',
-    href: '/docs/intro',
-  },
-  {
-    number: '04',
-    icon: '</>',
-    title: 'Python & Thuật toán',
-    description: 'Lập trình Python từ cơ bản, tư duy logic, thuật toán và bài tập thực hành.',
-    detail: 'BẮT ĐẦU LẬP TRÌNH',
-    tone: 'violet',
-    href: '/docs/python-tutorial/bai-1-lam-quen-python',
-  },
-];
-
-const grades: GradeItem[] = [
-  {grade: '6', label: 'Lớp 6', description: 'Nền tảng & khám phá', accent: '#356AE6', href: '/docs/intro'},
-  {grade: '7', label: 'Lớp 7', description: 'Mở rộng kiến thức', accent: '#0d9488', href: '/docs/intro'},
-  {grade: '8', label: 'Lớp 8', description: 'Vận dụng & thực hành', accent: '#d97706', href: '/docs/intro'},
-  {grade: '9', label: 'Lớp 9', description: 'Hệ thống & ôn tập', accent: '#7c3aed', href: '/docs/intro'},
-];
-
-const featuredItems: FeaturedItem[] = [
-  {
-    type: 'Bài giảng',
-    typeTone: 'blue',
-    title: 'Giới thiệu lập trình Python',
-    description: 'Bài giảng đầu tiên giúp học sinh làm quen với ngôn ngữ Python qua các ví dụ thực tế.',
-    grade: 'Lớp 8',
-    subject: 'Tin học',
-    href: '/docs/python-tutorial/bai-1-lam-quen-python',
-  },
-  {
-    type: 'Trò chơi',
-    typeTone: 'mint',
-    title: 'Đố vui kiến thức CNTT',
-    description: 'Trò chơi PowerPoint tương tác giúp ôn tập kiến thức công nghệ thông tin một cách sinh động.',
-    grade: 'Lớp 7',
-    subject: 'Tin học',
-    href: '/docs/intro',
-  },
-  {
-    type: 'Tài liệu',
-    typeTone: 'amber',
-    title: 'Phiếu bài tập thuật toán',
-    description: 'Tài liệu thực hành với các bài toán tư duy logic và thuật toán cơ bản.',
-    grade: 'Lớp 8',
-    subject: 'Tin học',
-    href: '/docs/intro',
-  },
-  {
-    type: 'Python',
-    typeTone: 'violet',
-    title: 'Biến và kiểu dữ liệu',
-    description: 'Hướng dẫn chi tiết về biến, kiểu dữ liệu cơ bản trong Python và cách sử dụng.',
-    grade: 'Lớp 8',
-    subject: 'Tin học',
-    href: '/docs/python-tutorial/bai-1-lam-quen-python',
-  },
-];
-
-const exampleQuestions: ExampleQuestion[] = [
-  {icon: '📖', text: 'Giải thích vòng lặp for trong Python'},
-  {icon: '🎮', text: 'Tìm trò chơi ôn tập cho lớp 7'},
-  {icon: '📂', text: 'Tài liệu về thuật toán sắp xếp'},
-];
-
-/* ──────────────────────────────────────────────
-   Shared Components
-   ────────────────────────────────────────────── */
 
 function ArrowIcon(): ReactNode {
   return <span aria-hidden="true" className={styles.arrow}>↗</span>;
+}
+
+function ResourceIcon({name}: {name: ResourceCategory['icon']}): ReactNode {
+  const paths = {
+    book: <path d="M12 6v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2Z" />,
+    presentation: <><path d="M3 3h18M4 3v13h16V3M12 16v5m-4 0 4-5 4 5" /><path d="m9 7 6 3-6 3Z" /></>,
+    code: <path d="m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18" />,
+  };
+  return <svg viewBox="0 0 24 24" className={styles.icon} aria-hidden="true" focusable="false">{paths[name]}</svg>;
 }
 
 function SectionLabel({children}: {children: string}): ReactNode {
   return <span className={styles.sectionEyebrow}>{children}</span>;
 }
 
-/* ──────────────────────────────────────────────
-   Section 02 — Hero
-   ────────────────────────────────────────────── */
+const heroCodeTokens = [
+  {text: '# Mỗi ngày, một điều mới', className: styles.codeComment},
+  {text: '\n'},
+  {text: 'print', className: styles.codeBlue},
+  {text: '('},
+  {text: '"Học Tin học"', className: styles.codeGreen},
+  {text: ')\n'},
+  {text: 'print', className: styles.codeBlue},
+  {text: '('},
+  {text: '"Sáng tạo"', className: styles.codeGreen},
+  {text: ')\n'},
+  {text: 'print', className: styles.codeBlue},
+  {text: '('},
+  {text: '"Chia sẻ tri thức"', className: styles.codeGreen},
+  {text: ')'},
+];
+const heroCode = heroCodeTokens.map(token => token.text).join('');
+const heroCodeCharacters = Array.from(heroCode);
+
+function HeroCode(): ReactNode {
+  const [visibleCount, setVisibleCount] = useState(0);
+
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    let count = 0;
+    let finished = false;
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function finish(): void {
+      finished = true;
+      clearTimeout(timer);
+      setVisibleCount(heroCodeCharacters.length);
+    }
+
+    function typeCharacter(): void {
+      if (finished) return;
+      count += 1;
+      setVisibleCount(count);
+      if (count === heroCodeCharacters.length) {
+        finished = true;
+        return;
+      }
+
+      const nextCharacter = heroCodeCharacters[count];
+      const completedLines = heroCodeCharacters.slice(0, count).filter(character => character === '\n').length;
+      const linePause = completedLines === 0 ? 300 : completedLines === 2 ? 400 : 200;
+      timer = setTimeout(typeCharacter, nextCharacter === '\n' ? linePause : 45);
+    }
+
+    function handleMotionChange(): void {
+      if (motionPreference.matches) finish();
+    }
+
+    if (motionPreference.matches) finish();
+    // Chờ khung Hero xuất hiện xong trước khi bắt đầu gõ.
+    else timer = setTimeout(typeCharacter, 750);
+    motionPreference.addEventListener('change', handleMotionChange);
+
+    return () => {
+      finished = true;
+      clearTimeout(timer);
+      motionPreference.removeEventListener('change', handleMotionChange);
+    };
+  }, []);
+
+  let remaining = visibleCount;
+  const isPaused = heroCodeCharacters[visibleCount] === '\n' || visibleCount === heroCodeCharacters.length;
+
+  return (
+    <pre className={`${styles.codeContent} ${styles.typingCode}`} aria-label="Ví dụ Python: Học, sáng tạo và chia sẻ">
+      {/* Giữ kích thước theo toàn bộ code; không hiện trước các dòng chưa gõ. */}
+      <code className={styles.typingSizer} aria-hidden="true">{heroCode}</code>
+      <code className={styles.typingText} aria-hidden="true">
+        {heroCodeTokens.map((token, index) => {
+          const characters = Array.from(token.text);
+          const text = characters.slice(0, Math.max(0, remaining)).join('');
+          remaining -= characters.length;
+          return text ? <span key={index} className={token.className}>{text}</span> : null;
+        })}
+        {visibleCount > 0 && <span className={`${styles.typingCursor} ${isPaused ? styles.cursorPaused : ''}`} />}
+      </code>
+      {/* Không đọc từng ký tự; vẫn có code khi JavaScript bị tắt. */}
+      <code className={styles.codeAccessible}>{heroCode}</code>
+      <noscript><code>{heroCode}</code></noscript>
+    </pre>
+  );
+}
 
 function HeroSection(): ReactNode {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} aria-labelledby="home-title">
       <div className={`container ${styles.heroGrid}`}>
-        {/* Left — Copy */}
         <div className={styles.heroContent}>
-          <div className={styles.eyebrow}>
-            <span className={styles.eyebrowDot} />
-            KHÔNG GIAN HỌC TẬP SỐ
-          </div>
-
-          <h1>
-            Khám phá tri thức.
-            <br />
-            <span>Sáng tạo mỗi ngày.</span>
-          </h1>
-
+          <div className={styles.eyebrow}>BLOG TIN HỌC · LEARN. CREATE. SHARE.</div>
+          <h1 id="home-title">Học Tin học.<br /><span>Sáng tạo.</span><br />Chia sẻ tri thức.</h1>
           <p className={styles.heroDescription}>
-            Không gian chia sẻ bài giảng, trò chơi học tập, tài liệu và kiến thức
-            công nghệ dành cho người học.
+            Không gian chia sẻ tài liệu Tin học THCS, trò chơi PowerPoint và kiến thức lập trình
+            Python dành cho giáo viên, học sinh và những người yêu thích công nghệ giáo dục.
           </p>
-
           <div className={styles.heroActions}>
-            <Link className={styles.primaryButton} to="/docs/intro">
-              Khám phá tài nguyên <ArrowIcon />
-            </Link>
-            <Link className={styles.secondaryButton} to="/docs/python-tutorial/bai-1-lam-quen-python">
-              Bắt đầu học Python
-            </Link>
+            <Link className={styles.primaryButton} to="#explore">Khám phá tài liệu <ArrowIcon /></Link>
+            <Link className={styles.secondaryButton} to={pythonLessonPath}>Bắt đầu học Python</Link>
           </div>
-
-          <div className={styles.heroMeta}>
-            <span><i />Học tập chủ động</span>
-            <span><i />Nội dung dễ tiếp cận</span>
-            <span><i />Cập nhật liên tục</span>
-          </div>
+          <p className={styles.heroMeta}>Dành cho giáo viên và học sinh lớp 6–9</p>
         </div>
-
-        {/* Right — Code Visual */}
-        <div className={styles.heroVisual} aria-label="Minh họa học tập và lập trình">
-          <div className={styles.visualGlow} />
-
+        <div className={styles.heroVisual}>
+          <div className={styles.visualGlow} aria-hidden="true" />
           <div className={styles.visualCard}>
-            <div className={styles.visualWindowBar}>
-              <span /><span /><span />
-              <small>learning.py</small>
-            </div>
-            <div className={styles.codeContent}>
-              <div><span className={styles.lineNo}>01</span><span className={styles.codePurple}>def</span> <span className={styles.codeBlue}>keep_learning</span>():</div>
-              <div><span className={styles.lineNo}>02</span>{'  '}skills = [<span className={styles.codeGreen}>'learn'</span>,</div>
-              <div><span className={styles.lineNo}>03</span>{'            '}<span className={styles.codeGreen}>'practice'</span>,</div>
-              <div><span className={styles.lineNo}>04</span>{'            '}<span className={styles.codeGreen}>'create'</span>]</div>
-              <div><span className={styles.lineNo}>05</span>{'  '}<span className={styles.codePurple}>return</span> skills</div>
-              <div className={styles.codeOutput}><span>▶</span> keep_learning()</div>
-            </div>
+            <div className={styles.windowBar}><span aria-hidden="true">● ● ●</span><span>hoc_tin_hoc.py</span></div>
+            <HeroCode />
+            <div className={styles.codeOutput}><span aria-hidden="true">↳</span> Từ kiến thức đến ý tưởng.</div>
           </div>
-
-          <div className={`${styles.floatNote} ${styles.noteTop}`}>
-            <span className={styles.noteIcon}>✳</span>
-            <span><strong>Learn</strong><small>Học điều mới</small></span>
-          </div>
-          <div className={`${styles.floatNote} ${styles.noteBottom}`}>
-            <span className={styles.noteIcon}>⌘</span>
-            <span><strong>Create</strong><small>Biến ý tưởng thành sản phẩm</small></span>
-          </div>
+          <div className={styles.visualNote} aria-hidden="true"><ResourceIcon name="book" /> Học · Sáng tạo · Chia sẻ</div>
         </div>
       </div>
     </section>
   );
 }
 
-/* ──────────────────────────────────────────────
-   Section 03 — Resource Categories
-   ────────────────────────────────────────────── */
-
 function ResourceCard({item}: {item: ResourceCategory}): ReactNode {
-  return (
-    <Link to={item.href} className={`${styles.resourceCard} ${styles[item.tone]}`}>
-      <div className={styles.cardTopline}>
-        <span className={styles.cardNumber}>{item.number}</span>
-        <span className={styles.cardIcon} aria-hidden="true">{item.icon}</span>
-      </div>
-      <div>
-        <h3>{item.title}</h3>
-        <p>{item.description}</p>
-      </div>
-      <div className={styles.cardFoot}>
-        <span>{item.detail}</span>
-        <ArrowIcon />
-      </div>
-    </Link>
-  );
+  const className = `${styles.resourceCard} ${styles[item.tone]} ${item.href ? styles.interactiveCard : ''}`;
+  const content = <>
+    <span className={styles.cardIcon}><ResourceIcon name={item.icon} /></span>
+    <h3>{item.title}</h3>
+    <p>{item.description}</p>
+    <div className={styles.cardFoot}>{item.href ? <>{item.actionLabel ?? 'Đọc bài học'} <ArrowIcon /></> : <span>Chưa có tài nguyên công khai</span>}</div>
+  </>;
+  return item.href ? <Link to={item.href} className={className}>{content}</Link> : <article className={className}>{content}</article>;
 }
 
 function ResourcesSection(): ReactNode {
   return (
-    <section className={styles.resourcesSection} id="explore">
+    <section className={styles.resourcesSection} id="explore" aria-labelledby="resources-title">
       <div className="container">
         <div className={styles.sectionHeading}>
-          <div>
-            <SectionLabel>KHO TÀI NGUYÊN</SectionLabel>
-            <h2>Khám phá kho tài nguyên</h2>
-            <p>Bốn nội dung chính giúp bạn bắt đầu hành trình học tập.</p>
-          </div>
-          <Link to="/docs/intro" className={styles.textLink}>
-            Xem tất cả <ArrowIcon />
-          </Link>
+          <SectionLabel>HỌC LIỆU & Ý TƯỞNG</SectionLabel>
+          <h2 id="resources-title">Bạn muốn khám phá điều gì?</h2>
+          <p>Ba hướng nội dung của Blog Tin Học. Bắt đầu với bài Python đã có, hoặc xem trạng thái các nhóm học liệu.</p>
         </div>
-
-        <div className={styles.resourceGrid}>
-          {resources.map((item) => (
-            <ResourceCard key={item.number} item={item} />
-          ))}
-        </div>
+        <div className={styles.resourceGrid}>{resources.map(item => <ResourceCard key={item.icon} item={item} />)}</div>
       </div>
     </section>
   );
 }
 
-/* ──────────────────────────────────────────────
-   Section 04 — Learning by Grade
-   ────────────────────────────────────────────── */
-
 function GradeCard({item}: {item: GradeItem}): ReactNode {
-  return (
-    <Link to={item.href} className={styles.gradeCard}>
-      <span className={styles.gradeNumber} style={{'--grade-accent': item.accent} as React.CSSProperties}>
-        {item.grade}
-      </span>
-      <div className={styles.gradeInfo}>
-        <strong>{item.label}</strong>
-        <small>{item.description}</small>
-      </div>
-      <ArrowIcon />
-    </Link>
-  );
+  const className = `${styles.gradeCard} ${styles[item.tone]} ${item.href ? styles.interactiveCard : ''}`;
+  const content = <>
+    <span className={styles.gradeNumber} aria-hidden="true">{item.grade}</span>
+    <div className={styles.gradeInfo}><h3>Lớp {item.grade}</h3><p>{item.href ? 'Bài làm quen Python' : 'Chưa có học liệu công khai'}</p></div>
+    {item.href && <ArrowIcon />}
+  </>;
+  return item.href ? <Link to={item.href} className={className}>{content}</Link> : <article className={className}>{content}</article>;
 }
 
 function LearningSection(): ReactNode {
   return (
-    <section className={styles.learningSection} id="learning-paths">
+    <section className={styles.learningSection} id="learning-paths" aria-labelledby="grades-title">
       <div className={`container ${styles.learningLayout}`}>
-        <div className={styles.learningIntro}>
-          <SectionLabel>CHƯƠNG TRÌNH THCS</SectionLabel>
-          <h2>Học tập theo chương trình THCS</h2>
-          <p>
-            Nội dung được tổ chức theo từng khối lớp trong chương trình Trung học cơ sở.
-            Dễ dàng tìm kiếm bài giảng, tài liệu phù hợp với nhu cầu học tập.
-          </p>
-          <Link to="/docs/intro" className={styles.primaryButton}>
-            Đi đến thư viện <ArrowIcon />
-          </Link>
+        <div className={styles.sectionHeading}>
+          <SectionLabel>TIN HỌC THCS</SectionLabel>
+          <h2 id="grades-title">Tìm nội dung theo lớp</h2>
+          <p>Hiện có bài làm quen Python gắn nhãn Tin học 8. Các khối lớp còn lại chưa có học liệu được công bố.</p>
         </div>
-
-        <div className={styles.gradeGrid}>
-          {grades.map((item) => (
-            <GradeCard key={item.grade} item={item} />
-          ))}
-        </div>
+        <div className={styles.gradeGrid}>{grades.map(item => <GradeCard key={item.grade} item={item} />)}</div>
       </div>
     </section>
-  );
-}
-
-/* ──────────────────────────────────────────────
-   Section 05 — Featured Resources
-   ────────────────────────────────────────────── */
-
-function FeaturedCard({item}: {item: FeaturedItem}): ReactNode {
-  return (
-    <Link to={item.href} className={styles.featuredCard}>
-      <div className={styles.featuredThumb}>
-        <span className={`${styles.featuredType} ${styles[item.typeTone]}`}>
-          {item.type}
-        </span>
-      </div>
-      <div className={styles.featuredBody}>
-        <h3>{item.title}</h3>
-        <p>{item.description}</p>
-        {(item.grade || item.subject) && (
-          <div className={styles.featuredMeta}>
-            {item.grade && <span>{item.grade}</span>}
-            {item.subject && <span>{item.subject}</span>}
-          </div>
-        )}
-      </div>
-    </Link>
   );
 }
 
 function FeaturedSection(): ReactNode {
   return (
-    <section className={styles.featuredSection}>
-      <div className="container">
+    <section className={styles.featuredSection} aria-labelledby="featured-title">
+      <div className={`container ${styles.featuredLayout}`}>
         <div className={styles.sectionHeading}>
-          <div>
-            <SectionLabel>NỔI BẬT</SectionLabel>
-            <h2>Nội dung nổi bật</h2>
-            <p>Bài giảng, trò chơi và tài liệu được đề xuất cho bạn.</p>
-          </div>
-          <Link to="/docs/intro" className={styles.textLink}>
-            Xem thêm <ArrowIcon />
-          </Link>
+          <SectionLabel>BÀI HỌC NỔI BẬT</SectionLabel>
+          <h2 id="featured-title">Một khởi đầu với Python</h2>
+          <p>Thử viết lời chào đầu tiên và quan sát kết quả ngay trong bài học.</p>
         </div>
-
-        <div className={styles.featuredGrid}>
-          {featuredItems.map((item) => (
-            <FeaturedCard key={item.title} item={item} />
-          ))}
-        </div>
+        <Link to={featuredLesson.href} className={`${styles.featuredCard} ${styles.interactiveCard}`}>
+          <span className={styles.featuredType}>BÀI HỌC</span>
+          <h3>{featuredLesson.title}</h3>
+          <p>{featuredLesson.description}</p>
+          <div className={styles.featuredMeta}><span>{featuredLesson.grade}</span><span>{featuredLesson.subject}</span></div>
+          <span className={styles.featuredAction}>Mở bài học <ArrowIcon /></span>
+        </Link>
       </div>
     </section>
   );
 }
-
-/* ──────────────────────────────────────────────
-   Section 06 — Programming Corner
-   ────────────────────────────────────────────── */
 
 function ProgrammingSection(): ReactNode {
   return (
-    <section className={styles.programmingSection}>
+    <section className={styles.programmingSection} aria-labelledby="python-title">
       <div className={`container ${styles.programmingLayout}`}>
         <div className={styles.programmingContent}>
-          <SectionLabel>LẬP TRÌNH</SectionLabel>
-          <h2>Khám phá thế giới lập trình</h2>
-          <p>
-            Bắt đầu hành trình lập trình Python từ con số 0. Học qua ví dụ thực tế,
-            bài tập có lời giải, và phát triển tư duy thuật toán một cách có hệ thống.
-          </p>
-
+          <SectionLabel>BẮT ĐẦU TỪ ĐIỀU ĐƠN GIẢN</SectionLabel>
+          <h2 id="python-title">Dòng code đầu tiên của bạn</h2>
+          <p>Chưa biết lập trình? Bài làm quen Python giới thiệu lệnh print và một khung thực hành để bạn thử thay đổi lời chào.</p>
           <ul className={styles.programmingFeatures}>
-            <li>
-              <span className={styles.featureCheck}>✓</span>
-              Hướng dẫn Python từ cơ bản đến nâng cao
-            </li>
-            <li>
-              <span className={styles.featureCheck}>✓</span>
-              Bài tập thực hành có lời giải chi tiết
-            </li>
-            <li>
-              <span className={styles.featureCheck}>✓</span>
-              Tư duy thuật toán và giải quyết vấn đề
-            </li>
+            <li>Làm quen với câu lệnh xuất thông tin</li>
+            <li>Thử viết lời chào theo cách của bạn</li>
+            <li>Quan sát kết quả khi chạy code</li>
           </ul>
-
-          <Link to="/docs/python-tutorial/bai-1-lam-quen-python" className={styles.programmingCta}>
-            Bắt đầu hành trình Python <ArrowIcon />
-          </Link>
+          <Link to={pythonLessonPath} className={styles.programmingCta}>Học bài Python đầu tiên <ArrowIcon /></Link>
         </div>
-
-        <div className={styles.programmingVisual}>
-          <div className={styles.terminalCard}>
-            <div className={styles.terminalBar}>
-              <span /><span /><span />
-              <small>python_basics.py</small>
-            </div>
-            <div className={styles.terminalBody}>
-              <div className={styles.termLine}>
-                <span className={styles.termComment}># Chào mừng đến với Python!</span>
-              </div>
-              <div className={styles.termLine}>
-                <span className={styles.termKeyword}>for</span> i <span className={styles.termKeyword}>in</span> <span className={styles.termFunc}>range</span>(<span className={styles.termNumber}>5</span>):
-              </div>
-              <div className={styles.termLine}>
-                {'    '}<span className={styles.termFunc}>print</span>(<span className={styles.termString}>f"Bước {'{'}i+1{'}'}: Học và thực hành"</span>)
-              </div>
-              <div className={styles.termDivider} />
-              <div className={styles.termLine}>
-                <span className={styles.termOutput}>▶ Bước 1: Học và thực hành</span>
-              </div>
-              <div className={styles.termLine}>
-                <span className={styles.termOutput}>▶ Bước 2: Học và thực hành</span>
-              </div>
-              <div className={styles.termLine}>
-                <span className={styles.termCursor}>|</span>
-              </div>
-            </div>
-          </div>
+        <div className={styles.terminalCard}>
+          <div className={styles.windowBar}><span aria-hidden="true">● ● ●</span><span>loi_chao.py</span></div>
+          <pre className={styles.terminalBody} aria-label="Ví dụ sử dụng lệnh print"><code><span className={styles.codeComment}># Thử lời chào của bạn</span>{'\n'}<span className={styles.codeBlue}>print</span>(<span className={styles.codeGreen}>"Xin chào!"</span>)</code></pre>
+          <div className={styles.terminalOutput}><span>Kết quả</span><samp>Xin chào!</samp></div>
         </div>
       </div>
     </section>
   );
 }
-
-/* ──────────────────────────────────────────────
-   Section 07 — AI Learning Assistant
-   ────────────────────────────────────────────── */
 
 function AISection(): ReactNode {
   return (
-    <section className={styles.aiSection}>
-      <div className="container">
-        <div className={styles.aiPanel}>
-          <div className={styles.aiHeader}>
-            <div className={styles.aiMark}>✳</div>
-            <div>
-              <SectionLabel>TRỢ LÝ HỌC TẬP</SectionLabel>
-              <h2>Tìm kiếm và học tập cùng AI</h2>
-            </div>
-          </div>
-
-          <p className={styles.aiDescription}>
-            Trợ lý AI sẽ giúp bạn tìm kiếm tài liệu, giải thích khái niệm
-            và gợi ý nội dung học tập phù hợp. Tính năng đang được phát triển.
-          </p>
-
-          <div className={styles.aiInputPreview}>
-            <div className={styles.aiSearchBox}>
-              <span className={styles.aiSearchIcon}>⌕</span>
-              <span className={styles.aiSearchPlaceholder}>Hỏi bất kì điều gì về bài học...</span>
-            </div>
-          </div>
-
-          <div className={styles.aiExamples}>
-            <span className={styles.aiExamplesLabel}>Ví dụ câu hỏi:</span>
-            <div className={styles.aiExampleList}>
-              {exampleQuestions.map((q) => (
-                <div key={q.text} className={styles.aiExampleChip}>
-                  <span>{q.icon}</span> {q.text}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <span className={styles.aiStatus}>SẮP RA MẮT</span>
-        </div>
+    <section className={styles.aiSection} aria-labelledby="ai-title">
+      <div className={`container ${styles.aiPanel}`}>
+        <SectionLabel>VỀ TRỢ LÝ AI</SectionLabel>
+        <h2 id="ai-title">Hiện chưa có trợ lý AI trên website</h2>
+        <p>Bạn có thể đọc bài Python và xem các nhóm nội dung ở trên. Chức năng hỏi đáp và tìm kiếm bằng AI hiện chưa khả dụng.</p>
       </div>
     </section>
   );
 }
 
-/* ──────────────────────────────────────────────
-   Page Root
-   ────────────────────────────────────────────── */
-
 export default function Home(): ReactNode {
-  // Register the existing custom section for Docusaurus's build-time link checks.
-  useBrokenLinks().collectAnchor('explore');
+  // Đăng ký các anchor tùy chỉnh để Docusaurus kiểm tra liên kết khi build.
+  const brokenLinks = useBrokenLinks();
+  ['explore', 'learning-paths', 'home-title', 'resources-title', 'grades-title', 'featured-title', 'python-title', 'ai-title'].forEach(id => brokenLinks.collectAnchor(id));
   return (
-    <Layout
-      title="Trang chủ"
-      description="Blog Tin Học – bài giảng, trò chơi PowerPoint, tài liệu học tập và lập trình Python dành cho học sinh THCS."
-    >
+    <Layout title="Trang chủ" description="Blog Tin Học — tài liệu Tin học THCS, trò chơi PowerPoint và bài học Python dành cho giáo viên, học sinh lớp 6–9.">
       <main className={styles.home}>
         <HeroSection />
         <ResourcesSection />
+        <FeaturedPowerPoint />
         <LearningSection />
         <FeaturedSection />
         <ProgrammingSection />

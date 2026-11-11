@@ -107,6 +107,13 @@ html {
   scroll-padding-top: 5rem;
 }
 
+/* Tôn trọng tùy chọn giảm chuyển động khi điều hướng tới anchor. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   font-family: var(--ifm-font-family-base);
   letter-spacing: -0.01em;
