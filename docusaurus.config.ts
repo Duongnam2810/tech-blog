@@ -2,6 +2,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+process.env.DOCUSAURUS_NO_PERSISTENT_CACHE = 'true';
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
@@ -43,6 +45,16 @@ const config: Config = {
     [
       'classic',
       {
+        pages: {
+          // Route mẫu chỉ dùng để duyệt local, không xuất bản cùng production.
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+            ...(process.env.NODE_ENV === 'production' ? ['**/powerpoint/mau-*.tsx'] : []),
+          ],
+        },
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
@@ -82,17 +94,18 @@ const config: Config = {
     navbar: {
       title: 'Blog Tin Học',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Logo Blog Tin Học',
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/#explore', label: 'Khám phá', position: 'left'},
+        {to: '/#explore', label: 'Khám phá', position: 'left', exact: true},
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/tai-lieu',
+          activeBaseRegex: '/tai-lieu(?:/|$)',
           position: 'left',
           label: 'Tài liệu',
         },
+        {to: '/powerpoint', label: 'PowerPoint', position: 'left', activeBaseRegex: '/powerpoint(?:/|$)'},
         {
           to: '/docs/python-tutorial/bai-1-lam-quen-python',
           label: 'Python',
@@ -113,15 +126,15 @@ const config: Config = {
         {
           title: 'Khám phá',
           items: [
-            {label: 'Tài liệu học tập', to: '/docs/intro'},
+            {label: 'Các nhóm học liệu', to: '/#explore'},
             {label: 'Bài viết', to: '/blog'},
           ],
         },
         {
           title: 'Học tập',
           items: [
-            {label: 'Python & thuật toán', to: '/docs/intro'},
-            {label: 'Tài nguyên học tập', to: '/docs/intro'},
+            {label: 'Làm quen với Python', to: '/docs/python-tutorial/bai-1-lam-quen-python'},
+            {label: 'Nội dung theo lớp', to: '/#learning-paths'},
           ],
         },
         {
