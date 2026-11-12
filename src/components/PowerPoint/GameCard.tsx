@@ -4,7 +4,7 @@ import {gameCategories, type PowerPointGame} from '@site/src/data/powerpoint';
 import GameImage from './GameImage';
 import LibraryIcon from './LibraryIcon';
 import {getGamePath} from './library';
-import styles from '@site/src/pages/powerpoint/styles.module.css';
+import styles from './styles.module.css';
 
 export default function GameCard({game}: {game: PowerPointGame}): ReactNode {
   const path = getGamePath(game);

@@ -1,0 +1,17 @@
+## Hướng dẫn cách chơi
+
+1. Thay bằng bước chơi đã xác nhận.
+2. Thay bằng thao tác tiếp theo đã xác nhận.
+
+## Lưu ý khi tổ chức
+
+Thay bằng lưu ý thực tế của trò chơi. Xóa mục này nếu không có nội dung.
+
+<!--
+Mẫu soạn thảo, không phải nội dung game công khai.
+Sau khi viết xong, lưu tại docs/powerpoint/<slug>.mdx.
+Thêm metadata tương ứng vào src/data/powerpoint.ts.
+Không thêm H1, frontmatter slug/title, Layout, GameDetailPage hoặc link tải ở đây.
+Trang lấy metadata và liên kết tải từ TypeScript theo tên file.
+Mục tiêu ngắn trong purpose được layout hiển thị; không sao chép lại vào nội dung.
+-->

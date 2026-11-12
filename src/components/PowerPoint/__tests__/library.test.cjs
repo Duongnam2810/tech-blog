@@ -21,6 +21,8 @@ function loadSource(filename) {
   function localRequire(id) {
     if (id.endsWith('.css')) return new Proxy({}, {get: (_, key) => key === '__esModule' ? false : key});
     if (id === '@theme/Layout') return ({children}) => React.createElement(React.Fragment, null, children);
+    if (id === '@theme/MDXContent') return ({children}) => React.createElement(React.Fragment, null, children);
+    if (id === '@theme/MDXPage') return ({content: Content}) => React.createElement('div', {'data-default-mdx': true}, React.createElement(Content));
     if (id === '@docusaurus/Link') return ({to, children, ...props}) => React.createElement('a', {href: to, ...props}, children);
     if (id === '@docusaurus/useBaseUrl') return value => value.startsWith('/') ? `/tech-blog${value}` : value;
     if (id.startsWith('@site/') || id.startsWith('.')) {
@@ -40,7 +42,17 @@ const {filterGames, getGamePath, getResourceUrl} = load('library.ts');
 const GameCard = load('GameCard.tsx').default;
 const GameLibrary = load('GameLibrary.tsx').default;
 const GameDetailPage = load('GameDetailPage.tsx').default;
+const PowerPointMDXPage = load('PowerPointMDXPage.tsx').default;
+const {getGameForMdxPage} = load('mdx.ts');
 const data = loadSource(path.join(root, 'src/data/powerpoint.ts'));
+const contentDirectory = path.join(root, 'docs/powerpoint');
+const pagesDirectory = path.join(root, 'src/pages/powerpoint');
+function getGameRouteFiles(slug) {
+  return [
+    path.join(contentDirectory, `${slug}.mdx`),
+    ...['.tsx', '.mdx', '.md', '.ts', '.jsx', '.js', '/index.tsx', '/index.mdx'].map(suffix => path.join(pagesDirectory, slug + suffix)),
+  ].filter(file => fs.existsSync(file));
+}
 const render = (component, props) => renderToStaticMarkup(React.createElement(component, props));
 const fixtures = [
   {id: 'test-1', slug: 'du-lieu-kiem-thu-1', title: 'DỮ LIỆU KIỂM THỬ: Giải mã đường đi', summary: 'Câu hỏi về thuật toán', category: 'giai-ma', grades: [6, 7], purpose: 'Ôn tập', tags: ['vòng lặp'], macroStatus: 'unknown'},
@@ -117,8 +129,93 @@ test('Mỗi game công khai phải có id/slug duy nhất và file trang chi ti�
     assert.ok(!ids.has(game.id) && !slugs.has(game.slug), 'id/slug không được trùng');
     ids.add(game.id); slugs.add(game.slug);
     getGamePath(game);
-    const base = path.join(root, 'src/pages/powerpoint', game.slug);
-    assert.ok(['.tsx', '.mdx', '/index.tsx', '/index.mdx'].some(suffix => fs.existsSync(base + suffix)), `Thiếu trang cho ${game.slug}`);
+    const routes = getGameRouteFiles(game.slug);
+    assert.equal(routes.length, 1, `Thiếu hoặc trùng trang cho ${game.slug}`);
   }
   assert.throws(() => data.getPowerPointGame('__khong-ton-tai__'));
+});
+
+test('MDX lấy metadata theo tên file và giữ bố cục mặc định cho trang khác', () => {
+  assert.equal(getGameForMdxPage('@site/src/pages/markdown-page.mdx'), undefined);
+  assert.equal(getGameForMdxPage('@site/docs/python-tutorial/test.mdx'), undefined);
+  assert.throws(() => getGameForMdxPage('@site/docs/powerpoint/khong-co.mdx'));
+  assert.throws(() => getGameForMdxPage('@site/src/pages/powerpoint/khong-co.mdx'));
+  data.powerpointGames.push(fixtures[0]);
+  try {
+    assert.equal(getGameForMdxPage('@site/docs/powerpoint/du-lieu-kiem-thu-1.mdx'), fixtures[0]);
+    assert.equal(getGameForMdxPage('@site\\docs\\powerpoint\\du-lieu-kiem-thu-1.mdx'), fixtures[0]);
+    assert.equal(getGameForMdxPage('@site/src/pages/powerpoint/du-lieu-kiem-thu-1.mdx'), fixtures[0]);
+    assert.equal(getGameForMdxPage('@site\\src\\pages\\powerpoint\\du-lieu-kiem-thu-1.mdx'), fixtures[0]);
+    const Content = Object.assign(() => React.createElement('h2', null, 'Nội dung MDX kiểm thử'), {metadata: {source: '@site/docs/powerpoint/du-lieu-kiem-thu-1.mdx'}});
+    const html = render(PowerPointMDXPage, {content: Content});
+    assert.equal((html.match(/<h1/g) ?? []).length, 1);
+    assert.ok(html.includes(fixtures[0].title));
+    assert.match(html, /Nội dung MDX kiểm thử/);
+    assert.doesNotMatch(html, /data-default-mdx/);
+    Content.metadata.source = '@site/src/pages/markdown-page.mdx';
+    assert.match(render(PowerPointMDXPage, {content: Content}), /data-default-mdx="true"/);
+  } finally { data.powerpointGames.pop(); }
+});
+
+test('MDX không lặp hướng dẫn cũ; trang TSX cũ vẫn hiển thị instructions', () => {
+  const game = {...fixtures[0], instructions: ['Hướng dẫn cũ kiểm thử']};
+  assert.match(render(GameDetailPage, {game}), /Hướng dẫn cũ kiểm thử/);
+  const html = render(GameDetailPage, {game, children: React.createElement('h2', null, 'Hướng dẫn MDX')});
+  assert.match(html, /Hướng dẫn MDX/);
+  assert.doesNotMatch(html, /Hướng dẫn cũ kiểm thử/);
+});
+
+test('Mẫu MDX giữ đủ các bước chơi, không lặp metadata và không trùng route TSX', () => {
+  const slug = 'mau-do-vui-tin-hoc';
+  const file = path.join(contentDirectory, `${slug}.mdx`);
+  const mdx = fs.readFileSync(file, 'utf8');
+  for (const step of ['Chia lớp thành các nhóm và thống nhất lượt trả lời.', 'Đọc câu hỏi, cho các nhóm thảo luận và chọn đáp án.', 'Đối chiếu đáp án và tổng kết kiến thức sau mỗi lượt.']) assert.ok(mdx.includes(step));
+  assert.ok(!fs.existsSync(path.join(root, 'src/pages/powerpoint', `${slug}.tsx`)));
+  assert.doesNotMatch(mdx, /^---|^# |GameDetailPage|downloadUrl|title:/m);
+  if (process.env.NODE_ENV === 'development') {
+    assert.equal(getGameForMdxPage(`@site/docs/powerpoint/${slug}.mdx`).instructions, undefined);
+  } else {
+    assert.throws(() => getGameForMdxPage(`@site/docs/powerpoint/${slug}.mdx`));
+  }
+});
+
+test('Mỗi file MDX liên kết đúng metadata và không có route TSX trùng tên', () => {
+  const directory = contentDirectory;
+  const files = fs.readdirSync(directory);
+  const samples = loadSource(path.join(root, 'src/data/powerpointSamples.ts')).powerpointSamples;
+  const entries = [...data.powerpointGames, ...samples];
+  for (const game of entries) {
+    const routes = getGameRouteFiles(game.slug);
+    assert.equal(routes.length, 1, `Thiếu hoặc trùng route: ${game.slug}`);
+  }
+  for (const file of files.filter(file => file.endsWith('.mdx'))) {
+    const slug = path.basename(file, '.mdx');
+    const content = fs.readFileSync(path.join(directory, file), 'utf8');
+    assert.equal(getGameRouteFiles(slug).length, 1);
+    assert.doesNotMatch(content, /^#\s|<(?:Layout|GameDetailPage)\b/m);
+    assert.doesNotMatch(content, /^---\s*\r?\n[\s\S]*?\b(?:title|slug|description|downloadUrl|category):/m);
+    if (slug.startsWith('mau-') && process.env.NODE_ENV !== 'development') {
+      assert.throws(() => getGameForMdxPage(`@site/docs/powerpoint/${file}`));
+    } else {
+      const game = getGameForMdxPage(`@site/docs/powerpoint/${file}`);
+      assert.equal(game.slug, slug);
+      for (const step of game.instructions ?? []) {
+        assert.ok(!content.includes(step), `Cùng một bước hướng dẫn bị lưu ở cả MDX và TypeScript: ${slug}`);
+      }
+    }
+  }
+});
+
+test('Loader Docs bỏ qua nguồn PowerPoint mà không ảnh hưởng các loader khác', () => {
+  const createPlugin = loadSource(path.join(root, 'plugins/powerpoint-mdx/index.ts')).default;
+  const docsRule = {include: [path.join(root, 'docs') + path.sep], use: [{loader: path.join(root, 'node_modules/@docusaurus/mdx-loader/lib/loader.js')}], exclude: /existing/};
+  const pagesRule = {include: [path.join(root, 'docs/powerpoint') + path.sep], use: docsRule.use};
+  const otherRule = {include: docsRule.include, use: [{loader: 'other-loader'}]};
+  const plugin = createPlugin({siteDir: root});
+  const result = plugin.configureWebpack({module: {rules: [docsRule, pagesRule, otherRule]}});
+  assert.deepEqual(result.module.rules[0].exclude, [/existing/, path.join(root, 'docs/powerpoint')]);
+  assert.equal(result.module.rules[1], pagesRule);
+  assert.equal(result.module.rules[2], otherRule);
+  assert.equal(docsRule.exclude.source, 'existing');
+  assert.equal(result.mergeStrategy['module.rules'], 'replace');
 });

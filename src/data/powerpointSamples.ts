@@ -9,7 +9,6 @@ export const powerpointSamples: PowerPointGame[] = process.env.NODE_ENV === 'dev
     category: 'gameshow', grades: [6, 7], organization: 'Theo nhóm',
     purpose: 'Ôn tập kiến thức', subjects: ['Tin học'], tags: ['trắc nghiệm', 'thi đố'],
     durationMinutes: 15,
-    instructions: ['Chia lớp thành các nhóm và thống nhất lượt trả lời.', 'Đọc câu hỏi, cho các nhóm thảo luận và chọn đáp án.', 'Đối chiếu đáp án và tổng kết kiến thức sau mỗi lượt.'],
     macroStatus: 'unknown',
   },
   {

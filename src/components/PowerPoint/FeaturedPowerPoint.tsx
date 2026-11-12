@@ -2,7 +2,7 @@ import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import {powerpointGames} from '@site/src/data/powerpoint';
 import GameCard from './GameCard';
-import styles from '@site/src/pages/powerpoint/styles.module.css';
+import styles from './styles.module.css';
 
 export default function FeaturedPowerPoint(): ReactNode {
   return <section className={`container ${styles.section}`} aria-labelledby="featured-powerpoint">

@@ -6,6 +6,14 @@ process.env.DOCUSAURUS_NO_PERSISTENT_CACHE = 'true';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// Giữ các quy tắc loại trừ mặc định khi dùng nhiều nguồn nội dung.
+const contentExclusions = [
+  '**/_*.{js,jsx,ts,tsx,md,mdx}',
+  '**/_*/**',
+  '**/*.test.{js,jsx,ts,tsx}',
+  '**/__tests__/**',
+];
+
 const config: Config = {
   title: 'Blog Tin Học',
   tagline: 'Khám phá tri thức. Sáng tạo mỗi ngày.',
@@ -46,16 +54,17 @@ const config: Config = {
       'classic',
       {
         pages: {
+          // MDX PowerPoint dùng layout riêng; MDX khác giữ layout mặc định.
+          mdxPageComponent: '@site/src/components/PowerPoint/PowerPointMDXPage',
           // Route mẫu chỉ dùng để duyệt local, không xuất bản cùng production.
           exclude: [
-            '**/_*.{js,jsx,ts,tsx,md,mdx}',
-            '**/_*/**',
-            '**/*.test.{js,jsx,ts,tsx}',
-            '**/__tests__/**',
-            ...(process.env.NODE_ENV === 'production' ? ['**/powerpoint/mau-*.tsx'] : []),
+            ...contentExclusions,
+            ...(process.env.NODE_ENV === 'production' ? ['**/powerpoint/mau-*.{tsx,mdx}'] : []),
           ],
         },
         docs: {
+          // PowerPoint do Pages plugin riêng quản lý, không tạo thêm /docs/powerpoint.
+          exclude: [...contentExclusions, 'powerpoint/**'],
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -82,6 +91,25 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-pages',
+      {
+        id: 'powerpoint',
+        path: 'docs/powerpoint',
+        routeBasePath: 'powerpoint',
+        include: ['*.mdx'],
+        mdxPageComponent: '@site/src/components/PowerPoint/PowerPointMDXPage',
+        exclude: [
+          ...contentExclusions,
+          ...(process.env.NODE_ENV === 'production' ? ['mau-*.mdx'] : []),
+        ],
+      },
+    ],
+    // Sau các plugin nội dung: ngăn Docs và Pages cùng biên dịch một file MDX.
+    './plugins/powerpoint-mdx/index.ts',
   ],
 
   themeConfig: {

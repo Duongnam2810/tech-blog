@@ -5,7 +5,7 @@ import {gameCategories, type PowerPointGame} from '@site/src/data/powerpoint';
 import GameImage from './GameImage';
 import LibraryIcon from './LibraryIcon';
 import {getResourceUrl} from './library';
-import styles from '@site/src/pages/powerpoint/styles.module.css';
+import styles from './styles.module.css';
 
 function formatDate(value?: string): string | undefined {
   if (!value || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return undefined;
@@ -20,6 +20,9 @@ export default function GameDetailPage({game, children}: {game: PowerPointGame; 
   const updatedAt = formatDate(game.updatedAt);
   const hasTechnicalInfo = Boolean(game.requirements?.length) || game.macroStatus !== 'unknown';
   const hasMetadata = Boolean(game.author || game.version || game.license || updatedAt);
+
+  // Nội dung MDX thay phần hướng dẫn cũ; không hiển thị hai bản cùng lúc.
+  const hasLegacyInstructions = !children && Boolean(game.instructions?.length);
 
   return <Layout title={game.title} description={game.summary}>
     <main className={`${styles.page} container ${styles.detailPage}`}>
@@ -41,9 +44,9 @@ export default function GameDetailPage({game, children}: {game: PowerPointGame; 
               {game.organization && <><dt>Tổ chức</dt><dd>{game.organization}</dd></>}
               {game.durationMinutes != null && <><dt>Thời gian gợi ý</dt><dd>{game.durationMinutes} phút</dd></>}
             </dl></section> : null}
-          {(game.gameplay || game.instructions?.length) ? <section><h2>Hướng dẫn cách chơi</h2>
+          {(game.gameplay || hasLegacyInstructions) ? <section><h2>{children ? 'Cách chơi tóm tắt' : 'Hướng dẫn cách chơi'}</h2>
             {game.gameplay && <p>{game.gameplay}</p>}
-            {Boolean(game.instructions?.length) && <ol>{game.instructions!.map((step, index) => <li key={index}>{step}</li>)}</ol>}
+            {hasLegacyInstructions && <ol>{game.instructions!.map((step, index) => <li key={index}>{step}</li>)}</ol>}
           </section> : null}
           {hasTechnicalInfo && <section><h2>Yêu cầu kỹ thuật</h2>
             {Boolean(game.requirements?.length) && <ul>{game.requirements!.map((item, index) => <li key={index}>{item}</li>)}</ul>}

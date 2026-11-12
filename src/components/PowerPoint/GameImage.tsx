@@ -2,7 +2,7 @@ import {useState, type ReactNode} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import {getResourceUrl} from './library';
 import LibraryIcon from './LibraryIcon';
-import styles from '@site/src/pages/powerpoint/styles.module.css';
+import styles from './styles.module.css';
 
 export default function GameImage({src, alt}: {src?: string; alt: string}): ReactNode {
   const source = getResourceUrl(src);

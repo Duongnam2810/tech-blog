@@ -3,7 +3,7 @@ import {gameCategories, type PowerPointGame} from '@site/src/data/powerpoint';
 import GameCard from './GameCard';
 import LibraryIcon from './LibraryIcon';
 import {filterGames, type GameFilters} from './library';
-import styles from '@site/src/pages/powerpoint/styles.module.css';
+import styles from './styles.module.css';
 
 const emptyFilters: GameFilters = {query: '', category: '', grade: '', purpose: ''};
 
