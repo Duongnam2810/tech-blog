@@ -18,10 +18,10 @@ export default function AboutPage(): ReactNode {
   const brokenLinks = useBrokenLinks();
   chapters.forEach(chapter => brokenLinks.collectAnchor(chapter.id));
   return <Layout title={pageMetadata.title} description={pageMetadata.description}>
-    <main id="main" className={styles.page} lang="en">
+    <main id="main" className={styles.page} lang="vi">
       <AboutHero />
-      <nav className={classes('chapter-nav', 'container')} aria-label="On this page">
-        <span className={classes('chapter-label')}>ON THIS PAGE</span>
+      <nav className={classes('chapter-nav', 'container')} aria-label="Nội dung trang">
+        <span className={classes('chapter-label')}>TRONG TRANG NÀY</span>
         <div>{chapters.map(chapter => <Link key={chapter.id} to={`#${chapter.id}`}>{chapter.label}</Link>)}</div>
       </nav>
       <AboutIntro />

@@ -490,7 +490,7 @@
 
 .interest-grid {
   display: grid;
-  grid-template-columns: repeat(4,minmax(0,1fr));
+  grid-template-columns: repeat(3,minmax(0,1fr));
   border-top: 1px solid var(--ifm-color-emphasis-200);
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
 }
@@ -1743,6 +1743,18 @@
 
 .contact-list a:hover {
   text-decoration: underline;
+}
+
+/* Khoảng cách cho nội dung cá nhân nhiều đoạn trong bố cục hiện có. */
+.hero-description > p + p {
+  margin-top: .75rem;
+}
+
+.teaching-copy p {
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--ifm-color-emphasis-600);
 }
 
 /* Chuyển động chỉ áp dụng cho Hero; kích thước và bố cục giữ nguyên. */

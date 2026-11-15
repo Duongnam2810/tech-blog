@@ -40,7 +40,7 @@ export default function AboutHero(): ReactNode {
         ? <span key={index}>{line}</span>
         : <Fragment key={index}>{line}{' '}</Fragment>)}</h1>
       <p className={classes('role')}>{profile.role}</p>
-      <p className={classes('hero-description')}>{profile.introduction}</p>
+      <div className={classes('hero-description')}>{profile.introduction.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</div>
       <div className={classes('actions')}>
         <Link to="#projects" className={classes('button', 'primary')}>{profile.projectsLabel}<Icon name="arrow" /></Link>
         <Link to="#contact" className={classes('button', 'secondary')}>{profile.contactLabel}</Link>
