@@ -31,7 +31,6 @@ export default function GameDetailPage({game, children}: {game: PowerPointGame; 
         <p className={styles.eyebrow}>{gameCategories[game.category]}</p>
         <h1>{game.title}</h1><p className={styles.intro}>{game.summary}</p>
       </header>
-      {game.isSample && <aside className={styles.notice}><strong>Dữ liệu mẫu — không phải trò chơi đã phát hành</strong><p>Mục tiêu, thời gian và cách chơi bên dưới chỉ minh họa bố cục. Chưa có tệp PowerPoint để tải hoặc kiểm tra tương thích.</p></aside>}
       <div className={styles.detailGrid}>
         <div className={styles.detailContent}>
           {game.thumbnail && <GameImage src={game.thumbnail} alt={`Ảnh bìa trò chơi ${game.title}`} />}

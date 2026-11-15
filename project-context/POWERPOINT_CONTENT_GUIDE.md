@@ -2,7 +2,7 @@
 
 > **Cơ chế đã triển khai:** Pages plugin riêng có `id: 'powerpoint'` đọc `docs/powerpoint/<slug>.mdx` và tạo URL `/powerpoint/<slug>`. `PowerPointMDXPage.tsx` lấy metadata theo tên file rồi ghép nội dung vào `GameDetailPage`. Docs plugin loại trừ `powerpoint/**`, các tài liệu khác vẫn ở `/docs`; `baseUrl` giữ `/tech-blog/`. Không cần thêm file TSX cho mỗi game mới.
 >
-> Cả ba trang mẫu hiện nằm trong `docs/powerpoint` dưới dạng MDX. Production loại trừ các trang `mau-*.mdx` khỏi Pages plugin riêng và không để Docs plugin xuất bản lại chúng. Các file TSX cũ, nếu còn, vẫn được hỗ trợ nhưng không được trùng route với MDX.
+> Thư viện chỉ dùng `powerpointGames` trong cả môi trường phát triển và production. Khi danh sách rỗng, giao diện hiển thị trạng thái chưa có trò chơi được công bố. Các file TSX cũ, nếu còn, vẫn được hỗ trợ nhưng không được trùng route với MDX.
 
 ## 1. Kiến trúc quản lý nội dung
 
@@ -65,7 +65,7 @@ Trang `/powerpoint` đọc danh sách `powerpointGames` từ:
 
 `src/data/powerpoint.ts`
 
-Hiện danh sách rỗng vì chưa có trò chơi thật được xác nhận.
+Danh sách hiện có metadata của “Đánh thức năng lực” và “Bịt mắt tìm cứu”. Cần kiểm tra nội dung, liên kết và quyền chia sẻ trước khi xuất bản.
 
 Dữ liệu công khai chỉ bao gồm những trò chơi đã có thông tin thực tế và được phép chia sẻ.
 
@@ -79,7 +79,7 @@ Khi thêm trò chơi mới:
 
 Không tự tạo dữ liệu sản phẩm giả để lấp đầy thư viện.
 
-## 3. Xem thử với dữ liệu mẫu
+## 3. Xem thư viện tại local
 
 Chạy:
 
@@ -91,39 +91,7 @@ Sau đó mở:
 
 `/tech-blog/powerpoint`
 
-Khi chưa có trò chơi thật, môi trường phát triển có thể sử dụng dữ liệu từ:
-
-`src/data/powerpointSamples.ts`
-
-Ba trò chơi minh họa hiện có:
-
-- Đố vui Tin học.
-- Giải mã ô chữ.
-- Khởi động nhanh.
-
-Dữ liệu mẫu phục vụ kiểm tra:
-
-- Bố cục thư viện.
-- Tìm kiếm.
-- Bộ lọc kết hợp.
-- Hiển thị card.
-- Điều hướng trang chi tiết.
-- Giao diện responsive.
-
-Các trò chơi mẫu phải được gắn nhãn rõ ràng và không chứa ảnh sản phẩm hoặc đường dẫn tải giả.
-
-Các số phút và hướng dẫn chỉ mang tính minh họa.
-
-### Quy tắc môi trường
-
-- Dữ liệu mẫu chỉ được sử dụng trong môi trường phát triển.
-- Production không hiển thị trò chơi mẫu.
-- Khi có trò chơi thật, thư viện ưu tiên dữ liệu công khai.
-- Các trang mẫu không được xuất bản lên GitHub Pages.
-
-**Lưu ý khi chuyển sang MDX:** Cơ chế loại trừ các trang mẫu `.tsx` trước đây phải được kiểm tra và điều chỉnh cho các route MDX. Không mặc định rằng điều kiện `NODE_ENV=development` trong component sẽ ngăn Docusaurus tạo trang MDX ở production.
-
-Phải kiểm tra kết quả production build để xác nhận các trang mẫu không được xuất bản.
+Thư viện luôn đọc dữ liệu từ `src/data/powerpoint.ts`. Không có danh sách dự phòng hoặc route trò chơi minh họa riêng.
 
 ---
 
@@ -133,8 +101,7 @@ Phải kiểm tra kết quả production build để xác nhận các trang mẫ
 tech-blog/
 ├── docs/
 │   ├── powerpoint/               # Pages plugin riêng, URL /powerpoint/<slug>
-│   │   ├── <slug>.mdx
-│   │   └── mau-*.mdx             # Chỉ dùng khi chạy local
+│   │   └── <slug>.mdx
 │   └── ...                      # Docs plugin, URL /docs/...
 ├── src/
 │   ├── components/
@@ -152,8 +119,7 @@ tech-blog/
 │   │       └── ...
 │   │
 │   ├── data/
-│   │   ├── powerpoint.ts
-│   │   └── powerpointSamples.ts
+│   │   └── powerpoint.ts
 │   │
 │   └── pages/
 │       └── powerpoint/
@@ -217,7 +183,6 @@ Yêu cầu:
 - Chọn `category` từ `gameCategories`.
 - Slug dùng chữ thường không dấu, số và dấu gạch ngang.
 - Không sử dụng slug `index`.
-- Không sử dụng tiền tố `mau-` cho trò chơi công khai.
 
 Chỉ khai báo các trường tùy chọn khi có thông tin thật.
 
@@ -301,7 +266,6 @@ Chạy:
 
 ```bash
 npm run typecheck
-node src/components/PowerPoint/__tests__/library.test.cjs
 npm run build
 ```
 
@@ -496,7 +460,7 @@ Không tạo thêm schema song song với `PowerPointGame`.
 
 ## 9. Phạm vi kiểm thử
 
-Bộ kiểm thử cần bao phủ:
+Bộ kiểm thử tự động PowerPoint cũ đã được gỡ theo quyết định của chủ dự án. Hiện kiểm tra bằng typecheck, production build và thao tác trên trình duyệt. Các nội dung cần kiểm tra:
 
 - Tìm kiếm tiếng Việt.
 - Bộ lọc kết hợp.
@@ -510,16 +474,9 @@ Bộ kiểm thử cần bao phủ:
 - Quan hệ giữa dữ liệu TypeScript và các trang MDX.
 - Phát hiện route chi tiết bị thiếu.
 - Phát hiện route trùng lặp.
-- Kiểm tra không xuất bản các trang mẫu.
 - Khả năng build production.
 
-Dữ liệu kiểm thử chỉ nằm trong file kiểm thử và không được import vào website production.
-
-Có thể sử dụng adapter tối thiểu cho kiểm thử render nếu phù hợp với cấu trúc hiện tại.
-
-Kiểm thử đơn vị không thay thế việc kiểm tra giao diện và tương tác thực tế bằng trình duyệt.
-
-Hiện chưa có trò chơi thật nên chưa thể nghiệm thu đầy đủ:
+Typecheck và build không thay thế việc kiểm tra giao diện và tương tác thực tế bằng trình duyệt. Cần xác minh trực tiếp:
 
 - Quy trình tải tệp thực tế.
 - Hình ảnh trò chơi thật.

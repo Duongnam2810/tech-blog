@@ -56,11 +56,7 @@ const config: Config = {
         pages: {
           // MDX PowerPoint dùng layout riêng; MDX khác giữ layout mặc định.
           mdxPageComponent: '@site/src/components/PowerPoint/PowerPointMDXPage',
-          // Route mẫu chỉ dùng để duyệt local, không xuất bản cùng production.
-          exclude: [
-            ...contentExclusions,
-            ...(process.env.NODE_ENV === 'production' ? ['**/powerpoint/mau-*.{tsx,mdx}'] : []),
-          ],
+          exclude: contentExclusions,
         },
         docs: {
           // PowerPoint do Pages plugin riêng quản lý, không tạo thêm /docs/powerpoint.
@@ -102,10 +98,7 @@ const config: Config = {
         routeBasePath: 'powerpoint',
         include: ['*.mdx'],
         mdxPageComponent: '@site/src/components/PowerPoint/PowerPointMDXPage',
-        exclude: [
-          ...contentExclusions,
-          ...(process.env.NODE_ENV === 'production' ? ['mau-*.mdx'] : []),
-        ],
+        exclude: contentExclusions,
       },
     ],
     // Sau các plugin nội dung: ngăn Docs và Pages cùng biên dịch một file MDX.
@@ -126,21 +119,20 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/#explore', label: 'Khám phá', position: 'left', exact: true},
+        {to: '/#explore', label: 'Trang chủ', position: 'left', exact: true},
         {
           to: '/tai-lieu',
           activeBaseRegex: '/tai-lieu(?:/|$)',
           position: 'left',
-          label: 'Tài liệu',
+          label: 'Tài liệu tham khảo',
         },
-        {to: '/powerpoint', label: 'PowerPoint', position: 'left', activeBaseRegex: '/powerpoint(?:/|$)'},
+        {to: '/powerpoint', label: 'Trò chơi PowerPoint', position: 'left', activeBaseRegex: '/powerpoint(?:/|$)'},
         {
           to: '/docs/python-tutorial/bai-1-lam-quen-python',
-          label: 'Python',
+          label: 'Học ngôn ngữ Python',
           position: 'left',
         },
-        {to: '/blog', label: 'Bài viết', position: 'left'},
-        {to: '/about', label: 'Giới thiệu', position: 'left'},
+        {to: '/about', label: 'Giới thiệu về tôi', position: 'left'},
         {
           href: 'https://github.com/Duongnam2810/tech-blog',
           label: 'GitHub',

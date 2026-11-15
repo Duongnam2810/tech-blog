@@ -20,9 +20,8 @@ export function filterGames(games: PowerPointGame[], filters: GameFilters): Powe
   });
 }
 
-export function getGamePath(game: Pick<PowerPointGame, 'slug' | 'isSample'>): string {
-  const isLocalSample = process.env.NODE_ENV === 'development' && game.isSample;
-  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(game.slug) || game.slug === 'index' || (game.slug.startsWith('mau-') && !isLocalSample)) {
+export function getGamePath(game: Pick<PowerPointGame, 'slug'>): string {
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(game.slug) || game.slug === 'index') {
     throw new Error(`Slug PowerPoint không hợp lệ: ${game.slug}`);
   }
   return `/powerpoint/${game.slug}`;

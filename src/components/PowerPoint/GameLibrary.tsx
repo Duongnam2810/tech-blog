@@ -30,7 +30,6 @@ export default function GameLibrary({games}: {games: PowerPointGame[]}): ReactNo
       <div><p className={styles.eyebrow}>KHÁM PHÁ THƯ VIỆN</p><h2 id="games-title">Tìm trò chơi cho lớp của bạn</h2></div>
       <p className={styles.sectionDescription}>Chọn hoạt động phù hợp, xem hướng dẫn<br />và yêu cầu trước khi sử dụng.</p>
     </div>
-    {games.some(game => game.isSample) && <aside className={styles.notice}><strong>Đang xem dữ liệu mẫu</strong><p>Các trò chơi dưới đây chỉ minh họa giao diện và thao tác tìm kiếm. Chưa có tệp PowerPoint, ảnh sản phẩm hoặc liên kết tải thực tế.</p></aside>}
     {games.length > 0 && <>
       <div role="search" aria-label="Tìm trò chơi PowerPoint" className={styles.searchPanel}>
         <label className={styles.searchLabel} htmlFor={searchId}>Tìm kiếm trò chơi</label>

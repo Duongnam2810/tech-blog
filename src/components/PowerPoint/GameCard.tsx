@@ -14,7 +14,6 @@ export default function GameCard({game}: {game: PowerPointGame}): ReactNode {
     </Link>
     <div className={styles.cardBody}>
       <p className={styles.badge}>{gameCategories[game.category]}</p>
-      {game.isSample && <span className={styles.cardMeta}>Dữ liệu mẫu</span>}
       <h3><Link to={path}>{game.title}</Link></h3>
       <p className={styles.cardSummary}>{game.summary}</p>
       <div className={styles.cardTags}>
